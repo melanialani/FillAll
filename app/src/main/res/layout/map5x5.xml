@@ -1,69 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.application.melanialani.fillall.MainActivity"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="lv 1"
-            android:onClick="level1"/>
-
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="lv 2"
-            android:onClick="level2"/>
-
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="lv 3"
-            android:onClick="level3"/>
-
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="lv 4"
-            android:onClick="level4"/>
-
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:text="lv 5"
-            android:onClick="level5"/>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:text="idgaf"/>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="5">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="5">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -96,6 +46,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv03"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv04"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -103,7 +61,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="5">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -136,6 +94,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv13"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv14"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -143,7 +109,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="5">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -176,6 +142,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv23"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv24"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -183,7 +157,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="5">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -216,6 +190,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv33"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv34"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -223,7 +205,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="5">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -256,6 +238,15 @@
                 android:layout_weight="1"
                 android:id="@+id/iv43"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv44"
+                android:src="@drawable/blank"/>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+
+</FrameLayout>
