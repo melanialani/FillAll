@@ -158,49 +158,6 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
-    //region load levels -> button action here
-    public void level1(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(1);
-
-        initiateNewMap();
-    }
-
-    public void level2(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(2);
-
-        initiateNewMap();
-    }
-
-    public void level3(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(3);
-
-        initiateNewMap();
-    }
-
-    public void level4(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(4);
-
-        initiateNewMap();
-    }
-
-    public void level5(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(5);
-
-        initiateNewMap();
-    }
-    //endregion
-
-    //region mapping
     private void initiateNewMap(){
         this.lebar = data.getLebar();
         this.tinggi = data.getTinggi();
@@ -245,6 +202,129 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
+    //region load levels -> button action here -> dont change if not necessary
+    public void level1(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(1);
+
+        initiateNewMap();
+    }
+
+    public void level2(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(2);
+
+        initiateNewMap();
+    }
+
+    public void level3(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(3);
+
+        initiateNewMap();
+    }
+
+    public void level4(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(4);
+
+        initiateNewMap();
+    }
+
+    public void level5(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(5);
+
+        initiateNewMap();
+    }
+
+    public void level6(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(6);
+
+        initiateNewMap();
+    }
+
+    public void level7(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(7);
+
+        initiateNewMap();
+    }
+
+    public void level8(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(8);
+
+        initiateNewMap();
+    }
+
+    public void level9(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(9);
+
+        initiateNewMap();
+    }
+
+    public void level10(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(10);
+
+        initiateNewMap();
+    }
+
+    public void level11(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(11);
+
+        initiateNewMap();
+    }
+
+    public void level12(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(12);
+
+        initiateNewMap();
+    }
+
+    public void level13(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(13);
+
+        initiateNewMap();
+    }
+
+    public void level14(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(14);
+
+        initiateNewMap();
+    }
+
+    public void level15(View v){
+        // get data from data
+        data = new Data();
+        data.setLevel(15);
+
+        initiateNewMap();
+    }
+    //endregion
+
+    //region define map -> also dont change if not necessary
     private void defineMap1x4(){
         mapspict[0][0] = (ImageView) findViewById(R.id.iv00);
         mapspict[0][1] = (ImageView) findViewById(R.id.iv01);
