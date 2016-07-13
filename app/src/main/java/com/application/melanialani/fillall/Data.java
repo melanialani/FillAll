@@ -148,6 +148,38 @@ public class Data {
         map[4][5] = "#";
     }
 
+    private void level11(){
+        this.tinggi = 5;
+        this.lebar = 6;
+
+        this.map = new String[tinggi][lebar];
+
+        // empty array maps
+        for (int x = 0; x < tinggi; x++){
+            for (int y = 0; y < lebar; y++){
+                try {
+                    this.map[x][y] = "0";
+                } catch (Exception ex){
+
+                }
+            }
+        }
+
+        // set default player position
+        this.posX = 0;
+        this.posY = 0;
+        map[posX][posY] = "1";
+
+        // set blocks
+        map[0][2] = "#";
+        map[1][0] = "#";
+        map[1][4] = "#";
+        map[2][0] = "#";
+        map[2][1] = "#";
+        map[3][3] = "#";
+        map[4][5] = "#";
+    }
+
     public void setLevel(int level){
         if (level == 1) this.level1();
         else if (level == 2) this.level2();

@@ -1,468 +1,62 @@
 package com.application.melanialani.fillall;
 
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.github.pwittchen.swipe.library.Swipe;
-import com.github.pwittchen.swipe.library.SwipeListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    //region variables
-    private Swipe           swipe;
-    private TextView        textView;
+    public Data data;
 
-    private String[][]      maps;
-    private ImageView[][]   mapspict;
-
-    private int             posX, posY;
-
-    private int             lebar = 4;
-    private int             tinggi = 5;
-
-    private Data            data;
-    //endregion
-
-    //region dont touch this if not necessary
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.splash_screen);
 
-        // initiate variables;
-        maps = new String[tinggi][lebar];
-        mapspict = new ImageView[tinggi][lebar];
-
-        // initiate textview
-        textView = (TextView) findViewById(R.id.textView);
-        textView.setText("");
-
-        // initiate swipe listener
-        swipeDetector();
-
-        // put each imageview into array
-        defineImageView();
-    }
-
-    @Override public boolean dispatchTouchEvent(MotionEvent event) {
-        swipe.dispatchTouchEvent(event);
-        return super.dispatchTouchEvent(event);
-    }
-
-    private void swipeDetector() {
-        swipe = new Swipe();
-        swipe.addListener(new SwipeListener() {
-            @Override public void onSwipingLeft(final MotionEvent event) {
-                //textView.setText("SWIPING_LEFT");
-                move("LEFT");
-            }
-
-            @Override public void onSwipedLeft(final MotionEvent event) {
-                //textView.setText("SWIPED_LEFT");
-                move("LEFT");
-            }
-
-            @Override public void onSwipingRight(final MotionEvent event) {
-                //textView.setText("SWIPING_RIGHT");
-                move("RIGHT");
-            }
-
-            @Override public void onSwipedRight(final MotionEvent event) {
-                //textView.setText("SWIPED_RIGHT");
-                move("RIGHT");
-            }
-
-            @Override public void onSwipingUp(final MotionEvent event) {
-                //textView.setText("SWIPING_UP");
-                move("UP");
-            }
-
-            @Override public void onSwipedUp(final MotionEvent event) {
-                //textView.setText("SWIPED_UP");
-                move("UP");
-            }
-
-            @Override public void onSwipingDown(final MotionEvent event) {
-                //textView.setText("SWIPING_DOWN");
-                move("DOWN");
-            }
-
-            @Override public void onSwipedDown(final MotionEvent event) {
-                //textView.setText("SWIPED_DOWN");
-                move("DOWN");
-            }
-        });
-    }
-    //endregion
-
-    private void move(String action) {
-        if (action.equalsIgnoreCase("RIGHT")){ // x same, y plus
-            int posYwanted = posY + 1;
-            for (int y = posYwanted; y < lebar; y++){
-                try {
-                    if (maps[posX][y].equals("0")){
-                        maps[posX][y] = "1";
-                        mapspict[posX][y].setImageResource(R.drawable.all);
-                        posY = y;
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-                //textView.setText(textView.getText() + " " + posX + "," + posY);
-            }
-        } else if (action.equalsIgnoreCase("LEFT")){ // x same, y minus
-            int posYwanted = posY - 1;
-            for (int y = posYwanted; y >= 0; y--){
-                try {
-                    if (maps[posX][y].equals("0")){
-                        maps[posX][y] = "1";
-                        mapspict[posX][y].setImageResource(R.drawable.all);
-                        posY = y;
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-                //textView.setText(textView.getText() + " " + posX + "," + posY);
-            }
-        } else if (action.equalsIgnoreCase("DOWN")){ // x plus, y same
-            int posXwanted = posX + 1;
-            for (int x = posXwanted; x < tinggi; x++){
-                try {
-                    if (maps[x][posY].equals("0")){
-                        maps[x][posY] = "1";
-                        mapspict[x][posY].setImageResource(R.drawable.all);
-                        posX = x;
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-                //textView.setText(textView.getText() + " " + posX + "," + posY);
-            }
-        } else if (action.equalsIgnoreCase("UP")){ // x minus, y same
-            int posXwanted = posX - 1;
-            for (int x = posXwanted; x >= 0; x--){
-                try {
-                    if (maps[x][posY].equals("0")){
-                        maps[x][posY] = "1";
-                        mapspict[x][posY].setImageResource(R.drawable.all);
-                        posX = x;
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-                //textView.setText(textView.getText() + " " + posX + "," + posY);
-            }
-        }
-    }
-
-    private void defineImageView() {
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-
-        mapspict[4][0] = (ImageView) findViewById(R.id.iv40);
-        mapspict[4][1] = (ImageView) findViewById(R.id.iv41);
-        mapspict[4][2] = (ImageView) findViewById(R.id.iv42);
-        mapspict[4][3] = (ImageView) findViewById(R.id.iv43);
-
-        // empty array maps
-        for (int x = 0; x < tinggi; x++){
-            for (int y = 0; y < lebar; y++){
-                try {
-                    maps[x][y] = "0";
-                } catch (Exception ex){
-                    Log.e("array_ERR", ex.toString());
-                }
-            }
-        }
-
-        // set default player position
-        posX = 4;
-        posY = 3;
-        maps[posX][posY] = "1";
-        mapspict[posX][posY].setImageResource(R.drawable.all);
-    }
-
-    //region load levels
-    public void level1(View v){
-        // get data from data
+        // initialize data class
         data = new Data();
-        data.setLevel(1);
 
-        initiateNewMap();
-    }
-
-    public void level2(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(2);
-
-        initiateNewMap();
-    }
-
-    public void level3(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(3);
-
-        initiateNewMap();
-    }
-
-    public void level4(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(4);
-
-        initiateNewMap();
-    }
-
-    public void level5(View v){
-        // get data from data
-        data = new Data();
-        data.setLevel(5);
-
-        initiateNewMap();
-    }
-    //endregion
-
-    private void initiateNewMap(){
-        this.lebar = data.getLebar();
-        this.tinggi = data.getTinggi();
-        this.posX = data.getPosX();
-        this.posY = data.getPosY();
-
-        this.maps = new String[tinggi][lebar];
-        this.maps = data.getMap();
-
-        this.mapspict = new ImageView[tinggi][lebar];
-
-        // set layout & put each image view into array
-        if (tinggi == 1 && lebar == 4) {
-            setContentView(R.layout.map1x4);
-            defineMap1x4();
-        } else if (tinggi == 4 && lebar == 4) {
-            setContentView(R.layout.map4x4);
-            defineMap4x4();
-        } else if (tinggi == 5 && lebar == 5) {
-            setContentView(R.layout.map5x5);
-            defineMap5x5();
-        } else if (tinggi == 5 && lebar == 6) {
-            setContentView(R.layout.map5x6);
-            defineMap5x6();
-        }
-
-        // properly set image source in each image view
-        for (int x = 0; x < tinggi; x++){
-            for (int y = 0; y < lebar; y++){
-                try {
-                    if (maps[x][y].equals("0")){
-                        mapspict[x][y].setImageResource(R.drawable.blank);
-                    } else if (maps[x][y].equals("1")){
-                        mapspict[x][y].setImageResource(R.drawable.all);
-                    } else if (maps[x][y].equals("#")){
-                        mapspict[x][y].setImageResource(R.drawable.block);
-                    }
-                } catch (Exception ex){
-                    Log.e("array_ERR", ex.toString());
-                }
+        // show splash screen for 3 seconds
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // go to main menu after 3s
+                setContentView(R.layout.activity_main);
             }
-        }
+        }, 3000);
     }
 
-    //region define array image view
-    private void defineMap1x4(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);
+    public void onPlay(View v){
+        setContentView(R.layout.menu_stage);
     }
 
-    private void defineMap3x6(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-        mapspict[0][4] = (ImageView) findViewById(R.id.iv04);   mapspict[1][4] = (ImageView) findViewById(R.id.iv14);
-        mapspict[0][5] = (ImageView) findViewById(R.id.iv05);   mapspict[1][5] = (ImageView) findViewById(R.id.iv15);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);
-        mapspict[2][4] = (ImageView) findViewById(R.id.iv24);
-        mapspict[2][5] = (ImageView) findViewById(R.id.iv25);
+    public void onCharacter(View v){
+        Intent i = new Intent();
     }
 
-    private void defineMap4x4(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
+    public void onStage1(View v){
+        gotoGameActivity(1);
     }
 
-    private void defineMap4x6(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-        mapspict[0][4] = (ImageView) findViewById(R.id.iv04);   mapspict[1][4] = (ImageView) findViewById(R.id.iv14);
-        mapspict[0][5] = (ImageView) findViewById(R.id.iv05);   mapspict[1][5] = (ImageView) findViewById(R.id.iv15);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-        mapspict[2][4] = (ImageView) findViewById(R.id.iv24);   mapspict[3][4] = (ImageView) findViewById(R.id.iv34);
-        mapspict[2][5] = (ImageView) findViewById(R.id.iv25);   mapspict[3][5] = (ImageView) findViewById(R.id.iv35);
+    public void onStage2(View v){
+        gotoGameActivity(2);
     }
 
-    private void defineMap5x4(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-
-        mapspict[4][0] = (ImageView) findViewById(R.id.iv40);
-        mapspict[4][1] = (ImageView) findViewById(R.id.iv41);
-        mapspict[4][2] = (ImageView) findViewById(R.id.iv42);
-        mapspict[4][3] = (ImageView) findViewById(R.id.iv43);
+    public void onStage3(View v){
+        gotoGameActivity(3);
     }
 
-    private void defineMap5x5(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-        mapspict[0][4] = (ImageView) findViewById(R.id.iv04);   mapspict[1][4] = (ImageView) findViewById(R.id.iv14);
+    private void gotoGameActivity(int stage){
+        // create intent game activity
+        // also send parameter to game activity -> send which stage selected
 
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-        mapspict[2][4] = (ImageView) findViewById(R.id.iv24);   mapspict[3][4] = (ImageView) findViewById(R.id.iv34);
-
-        mapspict[4][0] = (ImageView) findViewById(R.id.iv40);
-        mapspict[4][1] = (ImageView) findViewById(R.id.iv41);
-        mapspict[4][2] = (ImageView) findViewById(R.id.iv42);
-        mapspict[4][3] = (ImageView) findViewById(R.id.iv43);
-        mapspict[4][4] = (ImageView) findViewById(R.id.iv44);
+        Intent gameIntent = new Intent(MainActivity.this, GameActivity.class);
+        gameIntent.putExtra("stage", String.valueOf(stage));
+        startActivity(gameIntent);
     }
 
-    private void defineMap5x6(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-        mapspict[0][4] = (ImageView) findViewById(R.id.iv04);   mapspict[1][4] = (ImageView) findViewById(R.id.iv14);
-        mapspict[0][5] = (ImageView) findViewById(R.id.iv05);   mapspict[1][5] = (ImageView) findViewById(R.id.iv15);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-        mapspict[2][4] = (ImageView) findViewById(R.id.iv24);   mapspict[3][4] = (ImageView) findViewById(R.id.iv34);
-        mapspict[2][5] = (ImageView) findViewById(R.id.iv25);   mapspict[3][5] = (ImageView) findViewById(R.id.iv35);
-
-        mapspict[4][0] = (ImageView) findViewById(R.id.iv40);
-        mapspict[4][1] = (ImageView) findViewById(R.id.iv41);
-        mapspict[4][2] = (ImageView) findViewById(R.id.iv42);
-        mapspict[4][3] = (ImageView) findViewById(R.id.iv43);
-        mapspict[4][4] = (ImageView) findViewById(R.id.iv44);
-        mapspict[4][5] = (ImageView) findViewById(R.id.iv45);
-    }
-
-    private void defineMap5x7(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-        mapspict[0][4] = (ImageView) findViewById(R.id.iv04);   mapspict[1][4] = (ImageView) findViewById(R.id.iv14);
-        mapspict[0][5] = (ImageView) findViewById(R.id.iv05);   mapspict[1][5] = (ImageView) findViewById(R.id.iv15);
-        mapspict[0][6] = (ImageView) findViewById(R.id.iv06);   mapspict[1][6] = (ImageView) findViewById(R.id.iv16);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-        mapspict[2][4] = (ImageView) findViewById(R.id.iv24);   mapspict[3][4] = (ImageView) findViewById(R.id.iv34);
-        mapspict[2][5] = (ImageView) findViewById(R.id.iv25);   mapspict[3][5] = (ImageView) findViewById(R.id.iv35);
-        mapspict[2][6] = (ImageView) findViewById(R.id.iv26);   mapspict[3][6] = (ImageView) findViewById(R.id.iv36);
-
-        mapspict[4][0] = (ImageView) findViewById(R.id.iv40);
-        mapspict[4][1] = (ImageView) findViewById(R.id.iv41);
-        mapspict[4][2] = (ImageView) findViewById(R.id.iv42);
-        mapspict[4][3] = (ImageView) findViewById(R.id.iv43);
-        mapspict[4][4] = (ImageView) findViewById(R.id.iv44);
-        mapspict[4][5] = (ImageView) findViewById(R.id.iv45);
-        mapspict[4][6] = (ImageView) findViewById(R.id.iv46);
-    }
-
-    private void defineMap6x5(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-        mapspict[0][4] = (ImageView) findViewById(R.id.iv04);   mapspict[1][4] = (ImageView) findViewById(R.id.iv14);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-        mapspict[2][4] = (ImageView) findViewById(R.id.iv24);   mapspict[3][4] = (ImageView) findViewById(R.id.iv34);
-
-        mapspict[4][0] = (ImageView) findViewById(R.id.iv40);   mapspict[5][0] = (ImageView) findViewById(R.id.iv50);
-        mapspict[4][1] = (ImageView) findViewById(R.id.iv41);   mapspict[5][1] = (ImageView) findViewById(R.id.iv51);
-        mapspict[4][2] = (ImageView) findViewById(R.id.iv42);   mapspict[5][2] = (ImageView) findViewById(R.id.iv52);
-        mapspict[4][3] = (ImageView) findViewById(R.id.iv43);   mapspict[5][3] = (ImageView) findViewById(R.id.iv53);
-        mapspict[4][4] = (ImageView) findViewById(R.id.iv44);   mapspict[5][4] = (ImageView) findViewById(R.id.iv54);
-    }
-
-    private void defineMap6x6(){
-        mapspict[0][0] = (ImageView) findViewById(R.id.iv00);   mapspict[1][0] = (ImageView) findViewById(R.id.iv10);
-        mapspict[0][1] = (ImageView) findViewById(R.id.iv01);   mapspict[1][1] = (ImageView) findViewById(R.id.iv11);
-        mapspict[0][2] = (ImageView) findViewById(R.id.iv02);   mapspict[1][2] = (ImageView) findViewById(R.id.iv12);
-        mapspict[0][3] = (ImageView) findViewById(R.id.iv03);   mapspict[1][3] = (ImageView) findViewById(R.id.iv13);
-        mapspict[0][4] = (ImageView) findViewById(R.id.iv04);   mapspict[1][4] = (ImageView) findViewById(R.id.iv14);
-        mapspict[0][5] = (ImageView) findViewById(R.id.iv05);   mapspict[1][5] = (ImageView) findViewById(R.id.iv15);
-
-        mapspict[2][0] = (ImageView) findViewById(R.id.iv20);   mapspict[3][0] = (ImageView) findViewById(R.id.iv30);
-        mapspict[2][1] = (ImageView) findViewById(R.id.iv21);   mapspict[3][1] = (ImageView) findViewById(R.id.iv31);
-        mapspict[2][2] = (ImageView) findViewById(R.id.iv22);   mapspict[3][2] = (ImageView) findViewById(R.id.iv32);
-        mapspict[2][3] = (ImageView) findViewById(R.id.iv23);   mapspict[3][3] = (ImageView) findViewById(R.id.iv33);
-        mapspict[2][4] = (ImageView) findViewById(R.id.iv24);   mapspict[3][4] = (ImageView) findViewById(R.id.iv34);
-        mapspict[2][5] = (ImageView) findViewById(R.id.iv25);   mapspict[3][5] = (ImageView) findViewById(R.id.iv35);
-
-        mapspict[4][0] = (ImageView) findViewById(R.id.iv40);   mapspict[5][0] = (ImageView) findViewById(R.id.iv50);
-        mapspict[4][1] = (ImageView) findViewById(R.id.iv41);   mapspict[5][1] = (ImageView) findViewById(R.id.iv51);
-        mapspict[4][2] = (ImageView) findViewById(R.id.iv42);   mapspict[5][2] = (ImageView) findViewById(R.id.iv52);
-        mapspict[4][3] = (ImageView) findViewById(R.id.iv43);   mapspict[5][3] = (ImageView) findViewById(R.id.iv53);
-        mapspict[4][4] = (ImageView) findViewById(R.id.iv44);   mapspict[5][4] = (ImageView) findViewById(R.id.iv54);
-        mapspict[4][5] = (ImageView) findViewById(R.id.iv45);   mapspict[5][5] = (ImageView) findViewById(R.id.iv55);
-    }
-    //endregion
 }
