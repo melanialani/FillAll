@@ -13,7 +13,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -46,6 +46,22 @@
                 android:layout_weight="1"
                 android:id="@+id/iv03"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv05"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv06"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -53,7 +69,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -86,6 +102,22 @@
                 android:layout_weight="1"
                 android:id="@+id/iv13"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv14"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv15"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -93,7 +125,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -126,6 +158,22 @@
                 android:layout_weight="1"
                 android:id="@+id/iv23"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv24"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv25"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -133,7 +181,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -166,7 +214,22 @@
                 android:layout_weight="1"
                 android:id="@+id/iv33"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv34"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv35"
+                android:src="@drawable/blank"/>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

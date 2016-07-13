@@ -167,6 +167,46 @@
                 android:id="@+id/iv33"
                 android:src="@drawable/blank"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv40"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv41"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv42"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv43"
+                android:src="@drawable/blank"/>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

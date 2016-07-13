@@ -6,14 +6,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="6">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="5">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -54,6 +54,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv04"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv05"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -61,7 +69,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="5">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -102,6 +110,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv14"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv15"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -109,7 +125,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="5">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -150,6 +166,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv24"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv25"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -157,7 +181,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="5">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -198,6 +222,14 @@
                 android:layout_weight="1"
                 android:id="@+id/iv34"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv35"
+                android:src="@drawable/blank"/>
         </LinearLayout>
 
         <LinearLayout
@@ -205,7 +237,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:weightSum="5">
+            android:weightSum="6">
 
             <ImageView
                 android:layout_margin="5dp"
@@ -246,7 +278,70 @@
                 android:layout_weight="1"
                 android:id="@+id/iv44"
                 android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv45"
+                android:src="@drawable/blank"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv50"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv51"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv52"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv53"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv54"
+                android:src="@drawable/blank"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/iv55"
+                android:src="@drawable/blank"/>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

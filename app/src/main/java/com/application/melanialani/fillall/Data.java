@@ -3,11 +3,11 @@ package com.application.melanialani.fillall;
 /**
  * Created by melan on 7/9/2016.
  */
-public class Stage1 {
+public class Data {
     private int         tinggi, lebar, posX, posY;
     private String[][]  map;
 
-    public Stage1(){}
+    public Data(){}
 
     private void level1(){
         this.tinggi = 1;
