@@ -4,7 +4,7 @@ package com.application.melanialani.fillall;
  * Created by melan on 7/9/2016.
  */
 public class Data {
-    private int         tinggi, lebar, posX, posY;
+    private int         tinggi, lebar, posX, posY, posX2, posY2;
     private String[][]  map;
 
     public Data(){}
@@ -30,6 +30,9 @@ public class Data {
         this.posX = 0;
         this.posY = 0;
         map[posX][posY] = "1";
+
+        // only 1 player here, so...
+        this.posX2 = 100; this.posY2 = 100;
     }
 
     private void level2(){
@@ -53,6 +56,9 @@ public class Data {
         this.posX = 0;
         this.posY = 0;
         map[posX][posY] = "1";
+
+        // only 1 player here, so...
+        this.posX2 = 100; this.posY2 = 100;
     }
 
     private void level3(){
@@ -76,6 +82,9 @@ public class Data {
         this.posX = 2;
         this.posY = 2;
         map[posX][posY] = "1";
+
+        // only 1 player here, so...
+        this.posX2 = 100; this.posY2 = 100;
 
         // set blocks
         map[0][4] = "#";
@@ -108,6 +117,9 @@ public class Data {
         this.posY = 4;
         map[posX][posY] = "1";
 
+        // only 1 player here, so...
+        this.posX2 = 100; this.posY2 = 100;
+
         // set blocks
         map[0][0] = "#";
         map[1][2] = "#";
@@ -138,6 +150,9 @@ public class Data {
         this.posY = 0;
         map[posX][posY] = "1";
 
+        // only 1 player here, so...
+        this.posX2 = 100; this.posY2 = 100;
+
         // set blocks
         map[0][2] = "#";
         map[1][0] = "#";
@@ -149,8 +164,8 @@ public class Data {
     }
 
     private void level11(){
-        this.tinggi = 5;
-        this.lebar = 6;
+        this.tinggi = 6;
+        this.lebar = 4;
 
         this.map = new String[tinggi][lebar];
 
@@ -166,18 +181,13 @@ public class Data {
         }
 
         // set default player position
-        this.posX = 0;
-        this.posY = 0;
+        this.posX = 1;
+        this.posY = 2;
         map[posX][posY] = "1";
 
-        // set blocks
-        map[0][2] = "#";
-        map[1][0] = "#";
-        map[1][4] = "#";
-        map[2][0] = "#";
-        map[2][1] = "#";
-        map[3][3] = "#";
-        map[4][5] = "#";
+        this.posX2 = 3;
+        this.posY2 = 1;
+        map[posX2][posY2] = "1";
     }
 
     public void setLevel(int level){
@@ -206,5 +216,13 @@ public class Data {
 
     public int getTinggi() {
         return tinggi;
+    }
+
+    public int getPosX2() {
+        return posX2;
+    }
+
+    public int getPosY2() {
+        return posY2;
     }
 }
