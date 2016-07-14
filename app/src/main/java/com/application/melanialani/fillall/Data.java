@@ -321,37 +321,6 @@ public class Data {
     }
 
     private void level12(){
-        this.tinggi = 7;
-        this.lebar = 5;
-
-        this.map = new String[tinggi][lebar];
-
-        // empty array maps
-        for (int x = 0; x < tinggi; x++){
-            for (int y = 0; y < lebar; y++){
-                try {
-                    this.map[x][y] = "0";
-                } catch (Exception ex){
-
-                }
-            }
-        }
-
-        // set default player position
-        this.posX = 3;      this.posX2 = 5;
-        this.posY = 1;      this.posY2 = 3;
-        map[posX][posY] = "1";
-        map[posX2][posY2] = "1";
-
-        // set blocks
-        map[0][2] = "#";
-        map[2][0] = "#";
-        map[2][1] = "#";
-        map[5][1] = "#";
-        map[5][2] = "#";
-    }
-
-    private void level13(){
         this.tinggi = 6;
         this.lebar = 4;
 
@@ -378,9 +347,9 @@ public class Data {
         map[5][2] = "#";
     }
 
-    private void level14(){
+    private void level13(){
         this.tinggi = 4;
-        this.lebar = 6;
+        this.lebar = 5;
 
         this.map = new String[tinggi][lebar];
 
@@ -397,12 +366,41 @@ public class Data {
 
         // set default player position
         this.posX = 1;      this.posX2 = 2;
-        this.posY = 2;      this.posY2 = 4;
+        this.posY = 2;      this.posY2 = 2;
         map[posX][posY] = "1";
         map[posX2][posY2] = "1";
 
         // set blocks
-        map[2][0] = "#";
+        map[3][0] = "#";
+        map[1][1] = "#";
+        map[2][3] = "#";
+    }
+
+    private void level14(){
+        this.tinggi = 5;
+        this.lebar = 6;
+
+        this.map = new String[tinggi][lebar];
+
+        // empty array maps
+        for (int x = 0; x < tinggi; x++){
+            for (int y = 0; y < lebar; y++){
+                try {
+                    this.map[x][y] = "0";
+                } catch (Exception ex){
+
+                }
+            }
+        }
+
+        // set default player position
+        this.posX = 3;      this.posX2 = 1;
+        this.posY = 1;      this.posY2 = 2;
+        map[posX][posY] = "1";
+        map[posX2][posY2] = "1";
+
+        // set blocks
+        map[1][4] = "#";
     }
 
     private void level15(){
@@ -438,7 +436,6 @@ public class Data {
         else if (level == 2) this.level2();
         else if (level == 3) this.level3();
         else if (level == 4) this.level4();
-        else if (level == 5) this.level5();
         else if (level == 5) this.level5();
         else if (level == 6) this.level6();
         else if (level == 7) this.level7();

@@ -132,8 +132,8 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
 
-            int posY2wanted = posY2 + 1;
             if (player2){
+                int posY2wanted = posY2 + 1;
                 for (int y = posY2wanted; y < lebar; y++){
                     try {
                         if (maps[posX2][y].equals("0")){
@@ -163,8 +163,8 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
 
-            int posY2wanted = posY2 - 1;
             if (player2){
+                int posY2wanted = posY2 - 1;
                 for (int y = posY2wanted; y >= 0; y--){
                     try {
                         if (maps[posX2][y].equals("0")){
@@ -193,8 +193,8 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
 
-            int posX2wanted = posX2 + 1;
             if (player2){
+                int posX2wanted = posX2 + 1;
                 for (int x = posX2wanted; x < tinggi; x++){
                     try {
                         if (maps[x][posY2].equals("0")){
@@ -223,8 +223,8 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
 
-            int posX2wanted = posX2 - 1;
             if (player2){
+                int posX2wanted = posX2 - 1;
                 for (int x = posX2wanted; x >= 0; x--){
                     try {
                         if (maps[x][posY2].equals("0")){
@@ -239,6 +239,8 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
         }
+
+        //Log.d("POSITION", posX + "," + posY + " - " + posX2 + "," + posY2);
     }
 
     private void initiateNewMap(){
@@ -301,6 +303,8 @@ public class GameActivity extends AppCompatActivity {
         for (int x = 0; x < tinggi; x++){
             for (int y = 0; y < lebar; y++){
                 try {
+                    Log.d("x,y", x + "," + y);
+
                     if (maps[x][y].equals("0")){
                         mapspict[x][y].setImageResource(R.drawable.blank);
                     } else if (maps[x][y].equals("1")){
