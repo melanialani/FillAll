@@ -1,12 +1,16 @@
 package com.application.melanialani.fillall;
 
 public class Data {
-    private int         tinggi, lebar, posX, posY, posX2, posY2;
-    private String[][]  map;
-    private boolean     player2;
 
-    public Data(){}
+    //region variables
+    private int             tinggi, lebar, posX, posY, posX2, posY2;
+    private String[][]      map;
+    private boolean         player2;
+    //endregion
 
+    public Data(){ }
+
+    //region data mapping levels
     private void level1(){
         this.tinggi = 1;
         this.lebar = 4;
@@ -430,6 +434,7 @@ public class Data {
         map[0][3] = "#";
         map[4][2] = "#";
     }
+    //endregion
 
     public void setLevel(int level){
         if (level == 1) this.level1();
@@ -452,12 +457,13 @@ public class Data {
         else this.player2 = true;
     }
 
-    public int getLebar() {
-        return lebar;
+    //region GETTERS for mapping level
+    public int getTinggi() {
+        return tinggi;
     }
 
-    public String[][] getMap() {
-        return map;
+    public int getLebar() {
+        return lebar;
     }
 
     public int getPosX() {
@@ -466,10 +472,6 @@ public class Data {
 
     public int getPosY() {
         return posY;
-    }
-
-    public int getTinggi() {
-        return tinggi;
     }
 
     public int getPosX2() {
@@ -483,4 +485,9 @@ public class Data {
     public boolean getPlayer2() {
         return player2;
     }
+
+    public String[][] getMap() {
+        return map;
+    }
+    //endregion
 }

@@ -9,7 +9,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Data data;
+    private Data data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
 
         // initialize data class
-        data = new Data();
+        data = new Data(MainActivity.this);
 
         // show splash screen for 3 seconds
         final Handler handler = new Handler();

@@ -24,6 +24,7 @@ public class GameActivity extends AppCompatActivity {
     private boolean         player2, isReverse;
 
     private Data            data;
+    private DatabaseHelper  db;
     //endregion
 
     //region dont touch this if not necessary
@@ -44,6 +45,13 @@ public class GameActivity extends AppCompatActivity {
         // initiate variables;
         maps = new String[tinggi][lebar];
         mapspict = new ImageView[tinggi][lebar];
+        data = new Data();
+
+        // if dbVersion = 1, update it!
+        db = new DatabaseHelper(GameActivity.this); // connect to database
+        if (db.getDBVersion() == 1){
+            db.updateDBVersion(); // update dbversion to 2
+        }
 
         // initiate swipe listener
         swipeDetector();
@@ -322,87 +330,66 @@ public class GameActivity extends AppCompatActivity {
     //region load levels -> button action here -> dont change if not necessary
     public void level1(View v){
         // get data from data
-        data = new Data();
         data.setLevel(1);
-
         initiateNewMap();
     }
 
     public void level2(View v){
         // get data from data
-        data = new Data();
         data.setLevel(2);
-
         initiateNewMap();
     }
 
     public void level3(View v){
         // get data from data
-        data = new Data();
         data.setLevel(3);
-
         initiateNewMap();
     }
 
     public void level4(View v){
         // get data from data
-        data = new Data();
         data.setLevel(4);
-
         initiateNewMap();
     }
 
     public void level5(View v){
         // get data from data
-        data = new Data();
         data.setLevel(5);
-
         initiateNewMap();
     }
 
     public void level6(View v){
         // get data from data
-        data = new Data();
         data.setLevel(6);
-
         initiateNewMap();
     }
 
     public void level7(View v){
         // get data from data
-        data = new Data();
         data.setLevel(7);
-
         initiateNewMap();
     }
 
     public void level8(View v){
         // get data from data
-        data = new Data();
         data.setLevel(8);
-
         initiateNewMap();
     }
 
     public void level9(View v){
         // get data from data
-        data = new Data();
         data.setLevel(9);
-
         initiateNewMap();
     }
 
     public void level10(View v){
         // get data from data
-        data = new Data();
         data.setLevel(10);
-
         initiateNewMap();
     }
 
     public void level11(View v){
         // get data from data
-        data = new Data();
         data.setLevel(11);
 
         this.isReverse = true;
@@ -411,7 +398,6 @@ public class GameActivity extends AppCompatActivity {
 
     public void level12(View v){
         // get data from data
-        data = new Data();
         data.setLevel(12);
 
         this.isReverse = true;
@@ -420,7 +406,6 @@ public class GameActivity extends AppCompatActivity {
 
     public void level13(View v){
         // get data from data
-        data = new Data();
         data.setLevel(13);
 
         this.isReverse = true;
@@ -429,7 +414,6 @@ public class GameActivity extends AppCompatActivity {
 
     public void level14(View v){
         // get data from data
-        data = new Data();
         data.setLevel(14);
 
         this.isReverse = true;
@@ -438,7 +422,6 @@ public class GameActivity extends AppCompatActivity {
 
     public void level15(View v){
         // get data from data
-        data = new Data();
         data.setLevel(15);
 
         this.isReverse = true;
