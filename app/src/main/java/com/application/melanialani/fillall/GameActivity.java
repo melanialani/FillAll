@@ -1,6 +1,7 @@
 package com.application.melanialani.fillall;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,11 @@ import android.widget.TextView;
 
 import com.github.pwittchen.swipe.library.Swipe;
 import com.github.pwittchen.swipe.library.SwipeListener;
+
+import org.w3c.dom.Text;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -123,6 +129,24 @@ public class GameActivity extends AppCompatActivity {
         });
     }
     //endregion
+
+    boolean ganti = false;
+    private void backgroundTask_coba() {
+        final Handler handler = new Handler();
+        Runnable updateCurrentTime = new Runnable(){
+            @Override
+            public void run()
+            {
+                if (ganti) mapspict[0][0].setImageResource(R.drawable.all);
+                else mapspict[0][0].setImageResource(R.drawable.block);
+                ganti = !ganti;
+                handler.postDelayed(this, 1000);  // Run this again in 1 second
+            }
+        };
+
+        // the first call to the updateCurrentTime Runnable with a 10 milisecond delay
+        handler.postDelayed(updateCurrentTime, 10);
+    }
 
     private void move(String action) {
         if (action.equalsIgnoreCase("RIGHT")){ // x same, y plus
@@ -249,6 +273,7 @@ public class GameActivity extends AppCompatActivity {
         }
 
         //Log.d("POSITION", posX + "," + posY + " - " + posX2 + "," + posY2);
+        backgroundTask_coba();
     }
 
     private void initiateNewMap(){

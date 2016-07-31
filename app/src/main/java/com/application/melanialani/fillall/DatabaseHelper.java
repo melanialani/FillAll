@@ -90,7 +90,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_DBVERSION);
 
         db.execSQL("INSERT INTO " + TABLE_DBVERSION + " VALUES(1)");
-        db.execSQL("INSERT INTO " + TABLE_DBVERSION + " VALUES(0, 0, 0," +
+        db.execSQL("INSERT INTO " + TABLE_DATA + " VALUES(0, 0, 0," +
                 "0, 0, 0, 0, 0, 0, 0, 0, 0, 0)");
     }
 

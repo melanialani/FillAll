@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
 
         // initialize data class
-        data = new Data(MainActivity.this);
+        data = new Data();
 
         // show splash screen for 3 seconds
         final Handler handler = new Handler();
