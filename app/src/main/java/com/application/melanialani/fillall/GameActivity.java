@@ -2,6 +2,7 @@ package com.application.melanialani.fillall;
 
 import android.content.Intent;
 import android.os.Handler;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,9 +29,16 @@ public class GameActivity extends AppCompatActivity {
 
     private int             lebar, tinggi, posX, posY, posX2, posY2;
     private boolean         player2, isReverse;
+    private Handler         handler;
+    private Runnable        runnable;
 
     private Data            data;
     private DatabaseHelper  db;
+
+    private int             pictIndex;
+    private boolean         isAnimationDone;
+    private final int[] flatre_right = {R.drawable.flatre_ani0, R.drawable.right_flatre_ani1, R.drawable.right_flatre_ani2,
+            R.drawable.right_flatre_ani3, R.drawable.right_flatre_ani4};
     //endregion
 
     //region dont touch this if not necessary
@@ -130,22 +138,71 @@ public class GameActivity extends AppCompatActivity {
     }
     //endregion
 
-    boolean ganti = false;
-    private void backgroundTask_coba() {
-        final Handler handler = new Handler();
-        Runnable updateCurrentTime = new Runnable(){
+    private void changePicture(final int x, final int y, final int resId0, final int resId1, final int resId2, final int resId3, final int resId4){
+        handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
-            public void run()
-            {
-                if (ganti) mapspict[0][0].setImageResource(R.drawable.all);
-                else mapspict[0][0].setImageResource(R.drawable.block);
-                ganti = !ganti;
-                handler.postDelayed(this, 1000);  // Run this again in 1 second
-            }
-        };
+            public void run() {
+                mapspict[x][y].setImageResource(resId1);
 
-        // the first call to the updateCurrentTime Runnable with a 10 milisecond delay
-        handler.postDelayed(updateCurrentTime, 10);
+                handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mapspict[x][y].setImageResource(resId2);
+
+                        handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                mapspict[x][y].setImageResource(resId3);
+
+                                handler = new Handler();
+                                handler.postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        mapspict[x][y].setImageResource(resId4);
+
+                                        handler = new Handler();
+                                        handler.postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                mapspict[x][y].setImageResource(resId3);
+
+                                                handler = new Handler();
+                                                handler.postDelayed(new Runnable() {
+                                                    @Override
+                                                    public void run() {
+                                                        mapspict[x][y].setImageResource(resId2);
+
+                                                        handler = new Handler();
+                                                        handler.postDelayed(new Runnable() {
+                                                            @Override
+                                                            public void run() {
+                                                                mapspict[x][y].setImageResource(resId1);
+
+                                                                handler = new Handler();
+                                                                handler.postDelayed(new Runnable() {
+                                                                    @Override
+                                                                    public void run() {
+                                                                        mapspict[x][y].setImageResource(resId0);
+                                                                    }
+                                                                }, 0);
+                                                            }
+                                                        }, 0);
+                                                    }
+                                                }, 0);
+                                            }
+                                        }, 0);
+                                    }
+                                }, 0);
+                            }
+                        }, 0);
+                    }
+                }, 0);
+            }
+        }, 0);
+
     }
 
     private void move(String action) {
@@ -155,7 +212,8 @@ public class GameActivity extends AppCompatActivity {
                 try {
                     if (maps[posX][y].equals("0")){
                         maps[posX][y] = "1";
-                        mapspict[posX][y].setImageResource(R.drawable.all);
+                        //mapspict[posX][y].setImageResource(R.drawable.all);
+                        changePicture(posX, y, flatre_right[0], flatre_right[1], flatre_right[2], flatre_right[3], flatre_right[4]);
                         posY = y;
                     } else
                         break;
@@ -170,7 +228,7 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[posX2][y].equals("0")){
                             maps[posX2][y] = "1";
-                            mapspict[posX2][y].setImageResource(R.drawable.all);
+                            mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
                             posY2 = y;
                         } else
                             break;
@@ -180,13 +238,15 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
 
-        } else if (action.equalsIgnoreCase("LEFT")){ // x same, y minus
+        }
+
+        else if (action.equalsIgnoreCase("LEFT")){ // x same, y minus
             int posYwanted = posY - 1;
             for (int y = posYwanted; y >= 0; y--){
                 try {
                     if (maps[posX][y].equals("0")){
                         maps[posX][y] = "1";
-                        mapspict[posX][y].setImageResource(R.drawable.all);
+                        mapspict[posX][y].setImageResource(R.drawable.flatre_ani0);
                         posY = y;
                     } else
                         break;
@@ -201,7 +261,7 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[posX2][y].equals("0")){
                             maps[posX2][y] = "1";
-                            mapspict[posX2][y].setImageResource(R.drawable.all);
+                            mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
                             posY2 = y;
                         } else
                             break;
@@ -210,13 +270,15 @@ public class GameActivity extends AppCompatActivity {
                     }
                 }
             }
-        } else if (action.equalsIgnoreCase("DOWN")){ // x plus, y same
+        }
+
+        else if (action.equalsIgnoreCase("DOWN")){ // x plus, y same
             int posXwanted = posX + 1;
             for (int x = posXwanted; x < tinggi; x++){
                 try {
                     if (maps[x][posY].equals("0")){
                         maps[x][posY] = "1";
-                        mapspict[x][posY].setImageResource(R.drawable.all);
+                        mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
                         posX = x;
                     } else
                         break;
@@ -231,7 +293,7 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[x][posY2].equals("0")){
                             maps[x][posY2] = "1";
-                            mapspict[x][posY2].setImageResource(R.drawable.all);
+                            mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
                             posX2 = x;
                         } else
                             break;
@@ -240,13 +302,15 @@ public class GameActivity extends AppCompatActivity {
                     }
                 }
             }
-        } else if (action.equalsIgnoreCase("UP")){ // x minus, y same
+        }
+
+        else if (action.equalsIgnoreCase("UP")){ // x minus, y same
             int posXwanted = posX - 1;
             for (int x = posXwanted; x >= 0; x--){
                 try {
                     if (maps[x][posY].equals("0")){
                         maps[x][posY] = "1";
-                        mapspict[x][posY].setImageResource(R.drawable.all);
+                        mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
                         posX = x;
                     } else
                         break;
@@ -261,7 +325,7 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[x][posY2].equals("0")){
                             maps[x][posY2] = "1";
-                            mapspict[x][posY2].setImageResource(R.drawable.all);
+                            mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
                             posX2 = x;
                         } else
                             break;
@@ -273,7 +337,6 @@ public class GameActivity extends AppCompatActivity {
         }
 
         //Log.d("POSITION", posX + "," + posY + " - " + posX2 + "," + posY2);
-        backgroundTask_coba();
     }
 
     private void initiateNewMap(){
@@ -336,12 +399,10 @@ public class GameActivity extends AppCompatActivity {
         for (int x = 0; x < tinggi; x++){
             for (int y = 0; y < lebar; y++){
                 try {
-                    Log.d("x,y", x + "," + y);
-
                     if (maps[x][y].equals("0")){
                         mapspict[x][y].setImageResource(R.drawable.blank);
                     } else if (maps[x][y].equals("1")){
-                        mapspict[x][y].setImageResource(R.drawable.all);
+                        mapspict[x][y].setImageResource(R.drawable.flatre_ani0);
                     } else if (maps[x][y].equals("#")){
                         mapspict[x][y].setImageResource(R.drawable.block);
                     }
