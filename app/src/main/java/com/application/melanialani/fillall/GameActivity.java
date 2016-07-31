@@ -138,6 +138,7 @@ public class GameActivity extends AppCompatActivity {
     }
     //endregion
 
+    // i mean i know i'm awesome no need to thank me guys <3
     private void changePicture(final int x, final int y, final int resId0, final int resId1, final int resId2, final int resId3, final int resId4){
         handler = new Handler();
         handler.postDelayed(new Runnable() {
