@@ -29,6 +29,7 @@ public class GameActivity extends AppCompatActivity {
 
     private int             lebar, tinggi, posX, posY, posX2, posY2;
     private boolean         player2, isReverse, isMoving;
+    private boolean[]       isLocked;
     private Handler         handler;
     private Runnable        runnable;
 
@@ -55,6 +56,14 @@ public class GameActivity extends AppCompatActivity {
         maps = new String[tinggi][lebar];
         mapspict = new ImageView[tinggi][lebar];
         data = new Data();
+
+        // initiate LOCKLEVEL variables
+        isLocked = new boolean[16];
+        isLocked[0] = true;
+        isLocked[1] = false;
+        for ( int i = 2; i <= 15; i++ ) {
+            isLocked[i] = true;
+        }
 
         // if dbVersion = 1, update it!
         db = new DatabaseHelper(GameActivity.this); // connect to database

@@ -10,6 +10,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private Data data;
+    private boolean[] isStageLocked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
         // initialize data class
         data = new Data();
+
+        // initialize STAGELOCK
+        isStageLocked = new boolean[4];
+        isStageLocked[0] = true;
+        isStageLocked[1] = false;
+        isStageLocked[2] = true;
+        isStageLocked[3] = true;
 
         // show splash screen for 3 seconds
         final Handler handler = new Handler();
