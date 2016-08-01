@@ -6,9 +6,23 @@ public class Data {
     private int             tinggi, lebar, posX, posY, posX2, posY2;
     private String[][]      map;
     private boolean         player2;
+    private String          character;
     //endregion
 
-    public Data(){ }
+    //region constanta animation
+    private final int[] red_right = {R.drawable.flatre_ani0, R.drawable.right_flatre_ani1,
+            R.drawable.right_flatre_ani2, R.drawable.right_flatre_ani3, R.drawable.right_flatre_ani4};
+    private final int[] red_left = {R.drawable.flatre_ani0, R.drawable.left_flatre_ani1,
+            R.drawable.left_flatre_ani2, R.drawable.left_flatre_ani3, R.drawable.left_flatre_ani4};
+    private final int[] red_up = {R.drawable.flatre_ani0, R.drawable.up_flatre_ani1,
+            R.drawable.up_flatre_ani2, R.drawable.up_flatre_ani3, R.drawable.up_flatre_ani4};
+    private final int[] red_down = {R.drawable.flatre_ani0, R.drawable.down_flatre_ani1,
+            R.drawable.down_flatre_ani2, R.drawable.down_flatre_ani3, R.drawable.down_flatre_ani4};
+    //endregion
+
+    public Data(){
+        this.character = "RED";
+    }
 
     //region data mapping levels
     private void level1(){
@@ -486,8 +500,33 @@ public class Data {
         return player2;
     }
 
+    public String getCharacter() {
+        return character;
+    }
+
+    public void setCharacter(String character) {
+        this.character = character;
+    }
+
     public String[][] getMap() {
         return map;
+    }
+
+    // get res_id for animation RED
+    public int getResId_redRight(int index) {
+        return red_right[index];
+    }
+
+    public int getResId_redLeft(int index) {
+        return red_left[index];
+    }
+
+    public int getResId_redUp(int index) {
+        return red_up[index];
+    }
+
+    public int getResId_redDown(int index) {
+        return red_down[index];
     }
     //endregion
 }

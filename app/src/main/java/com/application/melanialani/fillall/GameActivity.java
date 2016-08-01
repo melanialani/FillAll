@@ -28,20 +28,15 @@ public class GameActivity extends AppCompatActivity {
     private ImageView[][]   mapspict;
 
     private int             lebar, tinggi, posX, posY, posX2, posY2;
-    private boolean         player2, isReverse;
+    private boolean         player2, isReverse, isMoving;
     private Handler         handler;
     private Runnable        runnable;
 
     private Data            data;
     private DatabaseHelper  db;
-
-    private int             pictIndex;
-    private boolean         isAnimationDone;
-    private final int[] flatre_right = {R.drawable.flatre_ani0, R.drawable.right_flatre_ani1, R.drawable.right_flatre_ani2,
-            R.drawable.right_flatre_ani3, R.drawable.right_flatre_ani4};
     //endregion
 
-    //region dont touch this if not necessary
+    //region onCreate & swipe detector -> dont touch this if not necessary
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,67 +74,56 @@ public class GameActivity extends AppCompatActivity {
     private void swipeDetector() {
         swipe = new Swipe();
         swipe.addListener(new SwipeListener() {
-            @Override public void onSwipingLeft(final MotionEvent event) {
-                if (!isReverse)
-                    move("LEFT");
-                else
-                    move("RIGHT");
-            }
+            @Override public void onSwipingLeft(final MotionEvent event) { }
 
             @Override public void onSwipedLeft(final MotionEvent event) {
-                if (!isReverse)
-                    move("LEFT");
-                else
-                    move("RIGHT");
+                if (!isMoving){
+                    if (!isReverse)
+                        move("LEFT");
+                    else
+                        move("RIGHT");
+                }
             }
 
-            @Override public void onSwipingRight(final MotionEvent event) {
-                if (!isReverse)
-                    move("RIGHT");
-                else
-                    move("LEFT");
-            }
+            @Override public void onSwipingRight(final MotionEvent event) { }
 
             @Override public void onSwipedRight(final MotionEvent event) {
-                if (!isReverse)
-                    move("RIGHT");
-                else
-                    move("LEFT");
+                if (!isMoving){
+                    if (!isReverse)
+                        move("RIGHT");
+                    else
+                        move("LEFT");
+                }
             }
 
-            @Override public void onSwipingUp(final MotionEvent event) {
-                if (!isReverse)
-                    move("UP");
-                else
-                    move("DOWN");
-            }
+            @Override public void onSwipingUp(final MotionEvent event) { }
 
             @Override public void onSwipedUp(final MotionEvent event) {
-                if (!isReverse)
-                    move("UP");
-                else
-                    move("DOWN");
+                if (!isMoving){
+                    if (!isReverse)
+                        move("UP");
+                    else
+                        move("DOWN");
+                }
             }
 
-            @Override public void onSwipingDown(final MotionEvent event) {
-                if (!isReverse)
-                    move("DOWN");
-                else
-                    move("UP");
-            }
+            @Override public void onSwipingDown(final MotionEvent event) { }
 
             @Override public void onSwipedDown(final MotionEvent event) {
-                if (!isReverse)
-                    move("DOWN");
-                else
-                    move("UP");
+                if (!isMoving){
+                    if (!isReverse)
+                        move("DOWN");
+                    else
+                        move("UP");
+                }
             }
         });
     }
     //endregion
 
-    // i mean i know i'm awesome no need to thank me guys <3
-    private void changePicture(final int x, final int y, final int resId0, final int resId1, final int resId2, final int resId3, final int resId4){
+    //region animation changePicture
+    private void changePicture(final int x, final int y, final int resId0, final int resId1,
+                               final int resId2, final int resId3, final int resId4){
         handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
@@ -187,6 +171,8 @@ public class GameActivity extends AppCompatActivity {
                                                                     @Override
                                                                     public void run() {
                                                                         mapspict[x][y].setImageResource(resId0);
+
+                                                                        isMoving = false;
                                                                     }
                                                                 }, 0);
                                                             }
@@ -205,6 +191,26 @@ public class GameActivity extends AppCompatActivity {
         }, 0);
 
     }
+    //endregion
+
+    private void setCharacterPicture(final int x, final int y, final String move){
+        if (data.getCharacter().equalsIgnoreCase("RED")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_redRight(0), data.getResId_redRight(1),
+                        data.getResId_redRight(2), data.getResId_redRight(3), data.getResId_redRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_redLeft(0), data.getResId_redLeft(1),
+                        data.getResId_redLeft(2), data.getResId_redLeft(3), data.getResId_redLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_redUp(0), data.getResId_redUp(1),
+                        data.getResId_redUp(2), data.getResId_redUp(3), data.getResId_redUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_redDown(0), data.getResId_redDown(1),
+                        data.getResId_redDown(2), data.getResId_redDown(3), data.getResId_redDown(4));
+            }
+        }
+
+    }
 
     private void move(String action) {
         if (action.equalsIgnoreCase("RIGHT")){ // x same, y plus
@@ -213,9 +219,9 @@ public class GameActivity extends AppCompatActivity {
                 try {
                     if (maps[posX][y].equals("0")){
                         maps[posX][y] = "1";
-                        //mapspict[posX][y].setImageResource(R.drawable.all);
-                        changePicture(posX, y, flatre_right[0], flatre_right[1], flatre_right[2], flatre_right[3], flatre_right[4]);
                         posY = y;
+                        //mapspict[posX][y].setImageResource(R.drawable.all);
+                        setCharacterPicture(posX, posY, action);
                     } else
                         break;
                 } catch (Exception ex){
@@ -229,8 +235,9 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[posX2][y].equals("0")){
                             maps[posX2][y] = "1";
-                            mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
                             posY2 = y;
+                            //mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
                         } else
                             break;
                     } catch (Exception ex){
@@ -247,8 +254,9 @@ public class GameActivity extends AppCompatActivity {
                 try {
                     if (maps[posX][y].equals("0")){
                         maps[posX][y] = "1";
-                        mapspict[posX][y].setImageResource(R.drawable.flatre_ani0);
                         posY = y;
+                        //mapspict[posX][y].setImageResource(R.drawable.flatre_ani0);
+                        setCharacterPicture(posX, posY, action);
                     } else
                         break;
                 } catch (Exception ex){
@@ -262,8 +270,9 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[posX2][y].equals("0")){
                             maps[posX2][y] = "1";
-                            mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
                             posY2 = y;
+                            //mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
                         } else
                             break;
                     } catch (Exception ex){
@@ -279,8 +288,9 @@ public class GameActivity extends AppCompatActivity {
                 try {
                     if (maps[x][posY].equals("0")){
                         maps[x][posY] = "1";
-                        mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
                         posX = x;
+                        //mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
+                        setCharacterPicture(posX, posY, action);
                     } else
                         break;
                 } catch (Exception ex){
@@ -294,8 +304,9 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[x][posY2].equals("0")){
                             maps[x][posY2] = "1";
-                            mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
                             posX2 = x;
+                            //mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
                         } else
                             break;
                     } catch (Exception ex){
@@ -311,8 +322,9 @@ public class GameActivity extends AppCompatActivity {
                 try {
                     if (maps[x][posY].equals("0")){
                         maps[x][posY] = "1";
-                        mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
                         posX = x;
+                        //mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
+                        setCharacterPicture(posX, posY, action);
                     } else
                         break;
                 } catch (Exception ex){
@@ -326,8 +338,9 @@ public class GameActivity extends AppCompatActivity {
                     try {
                         if (maps[x][posY2].equals("0")){
                             maps[x][posY2] = "1";
-                            mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
                             posX2 = x;
+                            //mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
                         } else
                             break;
                     } catch (Exception ex){
@@ -338,80 +351,6 @@ public class GameActivity extends AppCompatActivity {
         }
 
         //Log.d("POSITION", posX + "," + posY + " - " + posX2 + "," + posY2);
-    }
-
-    private void initiateNewMap(){
-        this.lebar = data.getLebar();
-        this.tinggi = data.getTinggi();
-        this.posX = data.getPosX();
-        this.posY = data.getPosY();
-        this.posX2 = data.getPosX2();
-        this.posY2 = data.getPosY2();
-        this.player2 = data.getPlayer2();
-
-        this.maps = new String[tinggi][lebar];
-        this.maps = data.getMap();
-
-        this.mapspict = new ImageView[tinggi][lebar];
-
-        // set layout & put each image view into array
-        if (tinggi == 1 && lebar == 4) {
-            setContentView(R.layout.map1x4);
-            defineMap1x4();
-        } else if (tinggi == 3 && lebar == 6) {
-            setContentView(R.layout.map3x6);
-            defineMap3x6();
-        } else if (tinggi == 4 && lebar == 4) {
-            setContentView(R.layout.map4x4);
-            defineMap4x4();
-        } else if (tinggi == 4 && lebar == 5) {
-            setContentView(R.layout.map4x5);
-            defineMap4x5();
-        } else if (tinggi == 4 && lebar == 6) {
-            setContentView(R.layout.map4x6);
-            defineMap4x6();
-        } else if (tinggi == 5 && lebar == 4) {
-            setContentView(R.layout.map5x4);
-            defineMap5x4();
-        } else if (tinggi == 5 && lebar == 5) {
-            setContentView(R.layout.map5x5);
-            defineMap5x5();
-        } else if (tinggi == 5 && lebar == 6) {
-            setContentView(R.layout.map5x6);
-            defineMap5x6();
-        } else if (tinggi == 5 && lebar == 7) {
-            setContentView(R.layout.map5x7);
-            defineMap5x7();
-        } else if (tinggi == 6 && lebar == 4) {
-            setContentView(R.layout.map6x4);
-            defineMap6x4();
-        } else if (tinggi == 6 && lebar == 5) {
-            setContentView(R.layout.map6x5);
-            defineMap6x5();
-        } else if (tinggi == 6 && lebar == 6) {
-            setContentView(R.layout.map6x6);
-            defineMap6x6();
-        } else if (tinggi == 7 && lebar == 5) {
-            setContentView(R.layout.map7x5);
-            defineMap7x5();
-        }
-
-        // properly set image source in each image view
-        for (int x = 0; x < tinggi; x++){
-            for (int y = 0; y < lebar; y++){
-                try {
-                    if (maps[x][y].equals("0")){
-                        mapspict[x][y].setImageResource(R.drawable.blank);
-                    } else if (maps[x][y].equals("1")){
-                        mapspict[x][y].setImageResource(R.drawable.flatre_ani0);
-                    } else if (maps[x][y].equals("#")){
-                        mapspict[x][y].setImageResource(R.drawable.block);
-                    }
-                } catch (Exception ex){
-                    Log.e("array_ERR", ex.toString());
-                }
-            }
-        }
     }
 
     //region load levels -> button action here -> dont change if not necessary
@@ -516,7 +455,81 @@ public class GameActivity extends AppCompatActivity {
     }
     //endregion
 
-    //region define map -> also dont change if not necessary
+    //region initiate new map & define map -> also dont change if not necessary
+    private void initiateNewMap(){
+        this.lebar = data.getLebar();
+        this.tinggi = data.getTinggi();
+        this.posX = data.getPosX();
+        this.posY = data.getPosY();
+        this.posX2 = data.getPosX2();
+        this.posY2 = data.getPosY2();
+        this.player2 = data.getPlayer2();
+
+        this.maps = new String[tinggi][lebar];
+        this.maps = data.getMap();
+
+        this.mapspict = new ImageView[tinggi][lebar];
+
+        // set layout & put each image view into array
+        if (tinggi == 1 && lebar == 4) {
+            setContentView(R.layout.map1x4);
+            defineMap1x4();
+        } else if (tinggi == 3 && lebar == 6) {
+            setContentView(R.layout.map3x6);
+            defineMap3x6();
+        } else if (tinggi == 4 && lebar == 4) {
+            setContentView(R.layout.map4x4);
+            defineMap4x4();
+        } else if (tinggi == 4 && lebar == 5) {
+            setContentView(R.layout.map4x5);
+            defineMap4x5();
+        } else if (tinggi == 4 && lebar == 6) {
+            setContentView(R.layout.map4x6);
+            defineMap4x6();
+        } else if (tinggi == 5 && lebar == 4) {
+            setContentView(R.layout.map5x4);
+            defineMap5x4();
+        } else if (tinggi == 5 && lebar == 5) {
+            setContentView(R.layout.map5x5);
+            defineMap5x5();
+        } else if (tinggi == 5 && lebar == 6) {
+            setContentView(R.layout.map5x6);
+            defineMap5x6();
+        } else if (tinggi == 5 && lebar == 7) {
+            setContentView(R.layout.map5x7);
+            defineMap5x7();
+        } else if (tinggi == 6 && lebar == 4) {
+            setContentView(R.layout.map6x4);
+            defineMap6x4();
+        } else if (tinggi == 6 && lebar == 5) {
+            setContentView(R.layout.map6x5);
+            defineMap6x5();
+        } else if (tinggi == 6 && lebar == 6) {
+            setContentView(R.layout.map6x6);
+            defineMap6x6();
+        } else if (tinggi == 7 && lebar == 5) {
+            setContentView(R.layout.map7x5);
+            defineMap7x5();
+        }
+
+        // properly set image source in each image view
+        for (int x = 0; x < tinggi; x++){
+            for (int y = 0; y < lebar; y++){
+                try {
+                    if (maps[x][y].equals("0")){
+                        mapspict[x][y].setImageResource(R.drawable.blank);
+                    } else if (maps[x][y].equals("1")){
+                        mapspict[x][y].setImageResource(R.drawable.flatre_ani0);
+                    } else if (maps[x][y].equals("#")){
+                        mapspict[x][y].setImageResource(R.drawable.block);
+                    }
+                } catch (Exception ex){
+                    Log.e("array_ERR", ex.toString());
+                }
+            }
+        }
+    }
+
     private void defineMap1x4(){
         mapspict[0][0] = (ImageView) findViewById(R.id.iv00);
         mapspict[0][1] = (ImageView) findViewById(R.id.iv01);

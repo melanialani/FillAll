@@ -34,10 +34,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.menu_stage);
     }
 
-    public void onCharacter(View v){
-        Intent i = new Intent();
-    }
-
     public void onStage1(View v){
         gotoGameActivity(1);
     }
@@ -57,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         Intent gameIntent = new Intent(MainActivity.this, GameActivity.class);
         gameIntent.putExtra("stage", String.valueOf(stage));
         startActivity(gameIntent);
+    }
+
+    public void gotoCharacterActivity(View view) {
+        Intent characterIntent = new Intent(MainActivity.this, CharacterActivity.class);
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(characterIntent);
     }
 
 }
