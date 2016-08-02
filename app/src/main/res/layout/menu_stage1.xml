@@ -15,6 +15,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="3dp"
+        android:id="@+id/level01"
         android:src="@drawable/level_1"
         android:onClick="level1"/>
 
@@ -23,6 +24,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="3dp"
+        android:id="@+id/level02"
         android:src="@drawable/level_2"
         android:onClick="level2"/>
 
@@ -31,6 +33,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="3dp"
+        android:id="@+id/level03"
         android:src="@drawable/level_3"
         android:onClick="level3"/>
 
@@ -39,6 +42,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="3dp"
+        android:id="@+id/level04"
         android:src="@drawable/level_4"
         android:onClick="level4"/>
 
@@ -47,6 +51,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_margin="3dp"
+        android:id="@+id/level05"
         android:src="@drawable/level_5"
         android:onClick="level5"/>
 

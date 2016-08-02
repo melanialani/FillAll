@@ -27,9 +27,12 @@ public class GameActivity extends AppCompatActivity {
     private String[][]      maps;
     private ImageView[][]   mapspict;
 
+    private boolean[]       isLocked;
+    private ImageView[]     levelView;
+
     private int             lebar, tinggi, posX, posY, posX2, posY2;
     private boolean         player2, isReverse, isMoving;
-    private boolean[]       isLocked;
+
     private Handler         handler;
     private Runnable        runnable;
 
@@ -43,27 +46,47 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+        // initiate LOCKLEVEL variables
+        isLocked = new boolean[16];
+        isLocked[1] = false;
+        for ( int i = 2; i <= 15; i++ ) {
+            isLocked[i] = true;
+        }
+
+        levelView = new ImageView[16];
+        levelView[1] = (ImageView) findViewById(R.id.level01);
+        levelView[2] = (ImageView) findViewById(R.id.level02);
+        levelView[3] = (ImageView) findViewById(R.id.level03);
+        levelView[4] = (ImageView) findViewById(R.id.level04);
+        levelView[5] = (ImageView) findViewById(R.id.level05);
+        levelView[6] = (ImageView) findViewById(R.id.level06);
+        levelView[7] = (ImageView) findViewById(R.id.level07);
+        levelView[8] = (ImageView) findViewById(R.id.level08);
+        levelView[9] = (ImageView) findViewById(R.id.level09);
+        levelView[10] = (ImageView) findViewById(R.id.level10);
+        levelView[11] = (ImageView) findViewById(R.id.level11);
+        levelView[12] = (ImageView) findViewById(R.id.level12);
+        levelView[13] = (ImageView) findViewById(R.id.level13);
+        levelView[14] = (ImageView) findViewById(R.id.level14);
+        levelView[15] = (ImageView) findViewById(R.id.level15);
+
         // check stage
         Intent callerIntent = getIntent();
-        if (callerIntent.getStringExtra("stage").equals("1"))
+        if (callerIntent.getStringExtra("stage").equals("1")) {
             setContentView(R.layout.menu_stage1);
-        else if (callerIntent.getStringExtra("stage").equals("2"))
+            checkLockLevelStage1();
+        } else if (callerIntent.getStringExtra("stage").equals("2")) {
             setContentView(R.layout.menu_stage2);
-        else if (callerIntent.getStringExtra("stage").equals("3"))
+            checkLockLevelStage2();
+        } else if (callerIntent.getStringExtra("stage").equals("3")) {
             setContentView(R.layout.menu_stage3);
+            checkLockLevelStage3();
+        }
 
         // initiate variables;
         maps = new String[tinggi][lebar];
         mapspict = new ImageView[tinggi][lebar];
         data = new Data();
-
-        // initiate LOCKLEVEL variables
-        isLocked = new boolean[16];
-        isLocked[0] = true;
-        isLocked[1] = false;
-        for ( int i = 2; i <= 15; i++ ) {
-            isLocked[i] = true;
-        }
 
         // if dbVersion = 1, update it!
         db = new DatabaseHelper(GameActivity.this); // connect to database
@@ -365,102 +388,127 @@ public class GameActivity extends AppCompatActivity {
     //region load levels -> button action here -> dont change if not necessary
     public void level1(View v){
         // get data from data
-        data.setLevel(1);
-        initiateNewMap();
+        if ( isLocked[1] == false ) {
+            data.setLevel(1);
+            initiateNewMap();
+        }
     }
 
     public void level2(View v){
         // get data from data
-        data.setLevel(2);
-        initiateNewMap();
+        if ( isLocked[2] == false ) {
+            data.setLevel(2);
+            initiateNewMap();
+        }
     }
 
     public void level3(View v){
         // get data from data
-        data.setLevel(3);
-        initiateNewMap();
+        if ( isLocked[3] == false ) {
+            data.setLevel(3);
+            initiateNewMap();
+        }
     }
 
     public void level4(View v){
         // get data from data
-        data.setLevel(4);
-        initiateNewMap();
+        if ( isLocked[4] == false ) {
+            data.setLevel(4);
+            initiateNewMap();
+        }
     }
 
     public void level5(View v){
         // get data from data
-        data.setLevel(5);
-        initiateNewMap();
+        if ( isLocked[5] == false ) {
+            data.setLevel(5);
+            initiateNewMap();
+        }
     }
 
     public void level6(View v){
         // get data from data
-        data.setLevel(6);
-        initiateNewMap();
+        if ( isLocked[6] == false ) {
+            data.setLevel(6);
+            initiateNewMap();
+        }
     }
 
     public void level7(View v){
         // get data from data
-        data.setLevel(7);
-        initiateNewMap();
+        if ( isLocked[7] == false ) {
+            data.setLevel(7);
+            initiateNewMap();
+        }
     }
 
     public void level8(View v){
         // get data from data
-        data.setLevel(8);
-        initiateNewMap();
+        if ( isLocked[8] == false ) {
+            data.setLevel(8);
+            initiateNewMap();
+        }
     }
 
     public void level9(View v){
         // get data from data
-        data.setLevel(9);
-        initiateNewMap();
+        if ( isLocked[9] == false ) {
+            data.setLevel(9);
+            initiateNewMap();
+        }
     }
 
     public void level10(View v){
         // get data from data
-        data.setLevel(10);
-        initiateNewMap();
+        if ( isLocked[10] == false ) {
+            data.setLevel(10);
+            initiateNewMap();
+        }
     }
 
     public void level11(View v){
         // get data from data
-        data.setLevel(11);
-
-        this.isReverse = true;
-        initiateNewMap();
+        if ( isLocked[11] == false ) {
+            data.setLevel(11);
+            this.isReverse = true;
+            initiateNewMap();
+        }
     }
 
     public void level12(View v){
         // get data from data
-        data.setLevel(12);
-
-        this.isReverse = true;
-        initiateNewMap();
+        if ( isLocked[12] == false ) {
+            data.setLevel(12);
+            this.isReverse = true;
+            initiateNewMap();
+        }
     }
 
     public void level13(View v){
         // get data from data
-        data.setLevel(13);
-
-        this.isReverse = true;
-        initiateNewMap();
+        if ( isLocked[13] == false ) {
+            data.setLevel(13);
+            this.isReverse = true;
+            initiateNewMap();
+        }
     }
 
     public void level14(View v){
         // get data from data
-        data.setLevel(14);
-
-        this.isReverse = true;
-        initiateNewMap();
+        if ( isLocked[14] == false ) {
+            data.setLevel(14);
+            this.isReverse = true;
+            initiateNewMap();
+        }
     }
 
     public void level15(View v){
         // get data from data
-        data.setLevel(15);
-
-        this.isReverse = true;
-        initiateNewMap();
+        if ( isLocked[15] == false ) {
+            data.setLevel(15);
+            this.isReverse = true;
+            initiateNewMap();
+        }
     }
     //endregion
 
@@ -776,4 +824,156 @@ public class GameActivity extends AppCompatActivity {
         mapspict[6][4] = (ImageView) findViewById(R.id.iv64);
     }
     //endregion
+
+    private void checkLockLevelStage1(){
+        levelView[1] = (ImageView) findViewById(R.id.level01);
+        levelView[2] = (ImageView) findViewById(R.id.level02);
+        levelView[3] = (ImageView) findViewById(R.id.level03);
+        levelView[4] = (ImageView) findViewById(R.id.level04);
+        levelView[5] = (ImageView) findViewById(R.id.level05);
+
+        //LEVEL01
+        if ( isLocked[1] == false ) {
+            levelView[1].setImageResource(R.drawable.level_1);
+        }
+        else {
+            levelView[1].setImageResource(R.drawable.level_1_closed);
+        }
+
+        //LEVEL02
+        if ( isLocked[2] == false ) {
+            levelView[2].setImageResource(R.drawable.level_2);
+        }
+        else {
+            levelView[2].setImageResource(R.drawable.level_2_closed);
+        }
+
+        //LEVEL03
+        if ( isLocked[3] == false ) {
+            levelView[3].setImageResource(R.drawable.level_3);
+        }
+        else {
+            levelView[3].setImageResource(R.drawable.level_3_closed);
+        }
+
+        //LEVEL04
+        if ( isLocked[4] == false ) {
+            levelView[4].setImageResource(R.drawable.level_4);
+        }
+        else {
+            levelView[4].setImageResource(R.drawable.level_4_closed);
+        }
+
+        //LEVEL05
+        if ( isLocked[5] == false ) {
+            levelView[5].setImageResource(R.drawable.level_5);
+        }
+        else {
+            levelView[5].setImageResource(R.drawable.level_5_closed);
+        }
+    }
+
+    private void checkLockLevelStage2(){
+        levelView[6] = (ImageView) findViewById(R.id.level06);
+        levelView[7] = (ImageView) findViewById(R.id.level07);
+        levelView[8] = (ImageView) findViewById(R.id.level08);
+        levelView[9] = (ImageView) findViewById(R.id.level09);
+        levelView[10] = (ImageView) findViewById(R.id.level10);
+
+        //LEVEL06
+        if ( isLocked[6] == false ) {
+            levelView[6].setImageResource(R.drawable.level_6);
+        }
+        else {
+            levelView[6].setImageResource(R.drawable.level_6_closed);
+        }
+
+        //LEVEL07
+        if ( isLocked[7] == false ) {
+            levelView[7].setImageResource(R.drawable.level_7);
+        }
+        else {
+            levelView[7].setImageResource(R.drawable.level_7_closed);
+        }
+
+        //LEVEL08
+        if ( isLocked[8] == false ) {
+            levelView[8].setImageResource(R.drawable.level_8);
+        }
+        else {
+            levelView[8].setImageResource(R.drawable.level_8_closed);
+        }
+
+        //LEVEL09
+        if ( isLocked[9] == false ) {
+            levelView[9].setImageResource(R.drawable.level_9);
+        }
+        else {
+            levelView[9].setImageResource(R.drawable.level_9_closed);
+        }
+
+        //LEVEL10
+        if ( isLocked[10] == false ) {
+            levelView[10].setImageResource(R.drawable.level_10);
+        }
+        else {
+            levelView[10].setImageResource(R.drawable.level_10_closed);
+        }
+    }
+
+    private void checkLockLevelStage3(){
+        levelView[11] = (ImageView) findViewById(R.id.level11);
+        levelView[12] = (ImageView) findViewById(R.id.level12);
+        levelView[13] = (ImageView) findViewById(R.id.level13);
+        levelView[14] = (ImageView) findViewById(R.id.level14);
+        levelView[15] = (ImageView) findViewById(R.id.level15);
+
+        //LEVEL10
+        if ( isLocked[10] == false ) {
+            levelView[10].setImageResource(R.drawable.level_10);
+        }
+        else {
+            levelView[10].setImageResource(R.drawable.level_10_closed);
+        }
+
+        //LEVEL11
+        if ( isLocked[11] == false ) {
+            levelView[11].setImageResource(R.drawable.level_11);
+        }
+        else {
+            levelView[11].setImageResource(R.drawable.level_11_closed);
+        }
+
+        //LEVEL12
+        if ( isLocked[12] == false ) {
+            levelView[12].setImageResource(R.drawable.level_12);
+        }
+        else {
+            levelView[12].setImageResource(R.drawable.level_12_closed);
+        }
+
+        //LEVEL13
+        if ( isLocked[13] == false ) {
+            levelView[13].setImageResource(R.drawable.level_13);
+        }
+        else {
+            levelView[13].setImageResource(R.drawable.level_13_closed);
+        }
+
+        //LEVEL14
+        if ( isLocked[14] == false ) {
+            levelView[14].setImageResource(R.drawable.level_14);
+        }
+        else {
+            levelView[14].setImageResource(R.drawable.level_14_closed);
+        }
+
+        //LEVEL15
+        if ( isLocked[15] == false ) {
+            levelView[15].setImageResource(R.drawable.level_15);
+        }
+        else {
+            levelView[15].setImageResource(R.drawable.level_15_closed);
+        }
+    }
 }
