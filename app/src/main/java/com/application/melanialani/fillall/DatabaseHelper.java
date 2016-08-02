@@ -33,10 +33,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_DATA_COINS = "coins";
     private static final String KEY_DATA_STAGESUNLOCKED = "stagesUnlocked";
     private static final String KEY_DATA_CHARACTERSUNLOCKED = "charactersUnlocked";
+    private static final String KEY_DATA_CHOSENCHARACTER = "chosenCharacter";
 
     // array column names for each table
     private static final String[] COLUMNS_TABLE_DATA = {
-            KEY_DATA_COINS, KEY_DATA_STAGESUNLOCKED, KEY_DATA_CHARACTERSUNLOCKED };
+            KEY_DATA_COINS, KEY_DATA_STAGESUNLOCKED, KEY_DATA_CHARACTERSUNLOCKED,
+            KEY_DATA_CHOSENCHARACTER};
     //endregion
 
     //region CREATE TABLE STATEMENTS
@@ -49,7 +51,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             //+ KEY_DATA_ID + " INTEGER PRIMARY KEY AUNTOINCREMENT, "
             + KEY_DATA_COINS + " INTEGER NOT NULL, "
             + KEY_DATA_STAGESUNLOCKED + " TEXT NOT NULL, "
-            + KEY_DATA_CHARACTERSUNLOCKED + " TEXT NOT NULL "
+            + KEY_DATA_CHARACTERSUNLOCKED + " TEXT NOT NULL, "
+            + KEY_DATA_CHOSENCHARACTER + " INTEGER NOT NULL "
             + ")";
     //endregion
 
@@ -65,7 +68,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_DBVERSION);
 
         db.execSQL("INSERT INTO " + TABLE_DBVERSION + " VALUES(1)");
-        db.execSQL("INSERT INTO " + TABLE_DATA + " VALUES(0, '1', '1')");
+        db.execSQL("INSERT INTO " + TABLE_DATA + " VALUES(0, '1', '1', 'RED')");
     }
 
     @Override
@@ -210,6 +213,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return charactersUnlocked;
     }
 
+    public String getChosenCharacter(){
+        String chosenCharacter;
+
+        // build the query
+        String query = "SELECT " + KEY_DATA_CHOSENCHARACTER + " FROM " + TABLE_DATA;
+
+        // get reference to writable database
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+
+        // if we got results, get the first one
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        // set result into variables
+        chosenCharacter = cursor.getString(0);
+
+        // log
+        Log.d(TAG + " CH_CHARA", chosenCharacter);
+
+        // return result
+        return chosenCharacter;
+    }
+
     public void setCoins(int coins){
         // build the query
         String query = "UPDATE " + TABLE_DATA
@@ -234,6 +261,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // build the query
         String query = "UPDATE " + TABLE_DATA
                     + " SET " + KEY_DATA_CHARACTERSUNLOCKED + " = " + charactersUnlocked;
+
+        // get reference to writable database
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.rawQuery(query, null);
+    }
+
+    public void setChosenCharacter(String chosenCharacter){
+        // build the query
+        String query = "UPDATE " + TABLE_DATA
+                + " SET " + KEY_DATA_CHOSENCHARACTER + " = " + chosenCharacter;
 
         // get reference to writable database
         SQLiteDatabase db = this.getWritableDatabase();

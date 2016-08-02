@@ -22,7 +22,7 @@ import java.util.Calendar;
 public class GameActivity extends AppCompatActivity {
 
     //region variables
-    private Swipe swipe;
+    private Swipe           swipe;
 
     private String[][]      maps;
     private ImageView[][]   mapspict;
@@ -34,7 +34,7 @@ public class GameActivity extends AppCompatActivity {
     private boolean         player2, isReverse, isMoving;
 
     private Handler         handler;
-    private Runnable        runnable;
+    private String          character;
 
     private Data            data;
     private DatabaseHelper  db;
@@ -98,7 +98,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void setCharacterPicture(final int x, final int y, final String move){
-        if (data.getCharacter().equalsIgnoreCase("RED")) {
+        if (db.getChosenCharacter().equalsIgnoreCase("RED")) {
             if (move.equalsIgnoreCase("RIGHT")){
                 changePicture(x, y, data.getResId_redRight(0), data.getResId_redRight(1),
                         data.getResId_redRight(2), data.getResId_redRight(3), data.getResId_redRight(4));

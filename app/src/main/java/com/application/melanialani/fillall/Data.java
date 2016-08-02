@@ -6,7 +6,7 @@ public class Data {
     private int             tinggi, lebar, posX, posY, posX2, posY2;
     private String[][]      map;
     private boolean         player2;
-    private String          character;
+    private DatabaseHelper  dbHelper;
     //endregion
 
     //region constanta animation
@@ -20,9 +20,7 @@ public class Data {
             R.drawable.down_flatre_ani2, R.drawable.down_flatre_ani3, R.drawable.down_flatre_ani4};
     //endregion
 
-    public Data(){
-        this.character = "RED";
-    }
+    public Data(){ }
 
     //region data mapping levels
     private void level1(){
@@ -498,14 +496,6 @@ public class Data {
 
     public boolean getPlayer2() {
         return player2;
-    }
-
-    public String getCharacter() {
-        return character;
-    }
-
-    public void setCharacter(String character) {
-        this.character = character;
     }
 
     public String[][] getMap() {
