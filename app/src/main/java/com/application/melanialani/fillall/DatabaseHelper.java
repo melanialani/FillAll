@@ -11,7 +11,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     //region TAG - DB NAME - DB VERSION
     // logcat tag
-    private static final String TAG = "DatabaseHelper";
+    private static final String TAG = "DBHelper";
 
     // database version
     private static final int DATABASE_VERSION = 1;
@@ -31,27 +31,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // column names of table data
     //private static final String KEY_DATA_ID = "id";
     private static final String KEY_DATA_COINS = "coins";
-    private static final String KEY_DATA_HASUNLOCKEDSTAGE2 = "hasUnlockedStage2";
-    private static final String KEY_DATA_HASUNLOCKEDSTAGE3 = "hasUnlockedStage3";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER1 = "hasUnlockedCharacter1";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER2 = "hasUnlockedCharacter2";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER3 = "hasUnlockedCharacter3";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER4 = "hasUnlockedCharacter4";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER5 = "hasUnlockedCharacter5";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER6 = "hasUnlockedCharacter6";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER7 = "hasUnlockedCharacter7";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER8 = "hasUnlockedCharacter8";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER9 = "hasUnlockedCharacter9";
-    private static final String KEY_DATA_HASUNLOCKEDCHARACTER10 = "hasUnlockedCharacter10";
+    private static final String KEY_DATA_STAGESUNLOCKED = "stagesUnlocked";
+    private static final String KEY_DATA_CHARACTERSUNLOCKED = "charactersUnlocked";
 
     // array column names for each table
     private static final String[] COLUMNS_TABLE_DATA = {
-            //KEY_DATA_ID,
-            KEY_DATA_COINS, KEY_DATA_HASUNLOCKEDSTAGE2, KEY_DATA_HASUNLOCKEDSTAGE3,
-            KEY_DATA_HASUNLOCKEDCHARACTER1, KEY_DATA_HASUNLOCKEDCHARACTER2, KEY_DATA_HASUNLOCKEDCHARACTER3,
-            KEY_DATA_HASUNLOCKEDCHARACTER4, KEY_DATA_HASUNLOCKEDCHARACTER5, KEY_DATA_HASUNLOCKEDCHARACTER6,
-            KEY_DATA_HASUNLOCKEDCHARACTER7, KEY_DATA_HASUNLOCKEDCHARACTER8, KEY_DATA_HASUNLOCKEDCHARACTER9,
-            KEY_DATA_HASUNLOCKEDCHARACTER10};
+            KEY_DATA_COINS, KEY_DATA_STAGESUNLOCKED, KEY_DATA_CHARACTERSUNLOCKED };
     //endregion
 
     //region CREATE TABLE STATEMENTS
@@ -63,18 +48,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String CREATE_TABLE_DATA = "CREATE TABLE " + TABLE_DATA + "("
             //+ KEY_DATA_ID + " INTEGER PRIMARY KEY AUNTOINCREMENT, "
             + KEY_DATA_COINS + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDSTAGE2 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDSTAGE3 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER1 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER2 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER3 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER4 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER5 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER6 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER7 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER8 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER9 + " INTEGER NOT NULL, "
-            + KEY_DATA_HASUNLOCKEDCHARACTER10 + " INTEGER NOT NULL "
+            + KEY_DATA_STAGESUNLOCKED + " TEXT NOT NULL, "
+            + KEY_DATA_CHARACTERSUNLOCKED + " TEXT NOT NULL "
             + ")";
     //endregion
 
@@ -82,7 +57,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
-    //region RECREATE TABLES - ON CREATE - ON UPGRADE
+    //region ON CREATE - ON UPGRADE
     @Override
     public void onCreate(SQLiteDatabase db) {
         // creating required tables
@@ -90,8 +65,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_DBVERSION);
 
         db.execSQL("INSERT INTO " + TABLE_DBVERSION + " VALUES(1)");
-        db.execSQL("INSERT INTO " + TABLE_DATA + " VALUES(0, 0, 0," +
-                "0, 0, 0, 0, 0, 0, 0, 0, 0, 0)");
+        db.execSQL("INSERT INTO " + TABLE_DATA + " VALUES(0, '1', '1')");
     }
 
     @Override
@@ -107,6 +81,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // recreate the tables
         this.onCreate(db);
     }
+    //endregion
 
     //region DBVersion
     public int getDBVersion(){
@@ -156,7 +131,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
     //endregion
 
-    //region Data-GETTERS
+    //region DATA
     public int getCoins(){
         int coins;
 
@@ -187,308 +162,54 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return coins;
     }
 
-    public int getHasUnlockedStage2(){
-        int hasUnlockedStage2;
+    public String getStagesUnlocked(){
+        String stagesUnlocked;
 
         // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDSTAGE2 + " FROM " + TABLE_DATA;
+        String query = "SELECT " + KEY_DATA_STAGESUNLOCKED + " FROM " + TABLE_DATA;
 
         // get reference to writable database
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
 
         // if we got results, get the first one
-        if (cursor != null){
+        if (cursor != null)
             cursor.moveToFirst();
-        }
 
         // set result into variables
-        hasUnlockedStage2 = Integer.parseInt(cursor.getString(0));
+        stagesUnlocked = cursor.getString(0);
 
         // log
-        Log.d(TAG + " getStg2", String.valueOf(hasUnlockedStage2));
+        Log.d(TAG + " STAGES", stagesUnlocked);
 
         // return result
-        return hasUnlockedStage2;
+        return stagesUnlocked;
     }
 
-    public int getHasUnlockedStage3(){
-        int hasUnlockedStage3;
+    public String getCharactersUnlocked(){
+        String charactersUnlocked;
 
         // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDSTAGE3 + " FROM " + TABLE_DATA;
+        String query = "SELECT " + KEY_DATA_CHARACTERSUNLOCKED + " FROM " + TABLE_DATA;
 
         // get reference to writable database
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
 
         // if we got results, get the first one
-        if (cursor != null){
+        if (cursor != null)
             cursor.moveToFirst();
-        }
 
         // set result into variables
-        hasUnlockedStage3 = Integer.parseInt(cursor.getString(0));
+        charactersUnlocked = cursor.getString(0);
 
         // log
-        Log.d(TAG + " getStg3", String.valueOf(hasUnlockedStage3));
+        Log.d(TAG + " CHARA", charactersUnlocked);
 
         // return result
-        return hasUnlockedStage3;
+        return charactersUnlocked;
     }
 
-    public int getHasUnlockedCharacter1(){
-        int hasUnlockedCharacter1;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER1 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter1 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar1", String.valueOf(hasUnlockedCharacter1));
-
-        // return result
-        return hasUnlockedCharacter1;
-    }
-
-    public int getHasUnlockedCharacter2(){
-        int hasUnlockedCharacter2;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER2 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter2 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar2", String.valueOf(hasUnlockedCharacter2));
-
-        // return result
-        return hasUnlockedCharacter2;
-    }
-
-    public int getHasUnlockedCharacter3(){
-        int hasUnlockedCharacter3;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER3 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter3 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar3", String.valueOf(hasUnlockedCharacter3));
-
-        // return result
-        return hasUnlockedCharacter3;
-    }
-
-    public int getHasUnlockedCharacter4(){
-        int hasUnlockedCharacter4;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER4 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter4 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar4", String.valueOf(hasUnlockedCharacter4));
-
-        // return result
-        return hasUnlockedCharacter4;
-    }
-
-    public int getHasUnlockedCharacter5(){
-        int hasUnlockedCharacter5;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER5 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter5 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar5", String.valueOf(hasUnlockedCharacter5));
-
-        // return result
-        return hasUnlockedCharacter5;
-    }
-
-    public int getHasUnlockedCharacter6(){
-        int hasUnlockedCharacter6;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER6 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter6 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar6", String.valueOf(hasUnlockedCharacter6));
-
-        // return result
-        return hasUnlockedCharacter6;
-    }
-
-    public int getHasUnlockedCharacter7(){
-        int hasUnlockedCharacter7;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER7 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter7 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar7", String.valueOf(hasUnlockedCharacter7));
-
-        // return result
-        return hasUnlockedCharacter7;
-    }
-
-    public int getHasUnlockedCharacter8(){
-        int hasUnlockedCharacter8;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER8 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter8 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar8", String.valueOf(hasUnlockedCharacter8));
-
-        // return result
-        return hasUnlockedCharacter8;
-    }
-
-    public int getHasUnlockedCharacter9(){
-        int hasUnlockedCharacter9;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER9 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter9 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChar9", String.valueOf(hasUnlockedCharacter9));
-
-        // return result
-        return hasUnlockedCharacter9;
-    }
-
-    public int getHasUnlockedCharacter10(){
-        int hasUnlockedCharacter10;
-
-        // build the query
-        String query = "SELECT " + KEY_DATA_HASUNLOCKEDCHARACTER10 + " FROM " + TABLE_DATA;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // if we got results, get the first one
-        if (cursor != null){
-            cursor.moveToFirst();
-        }
-
-        // set result into variables
-        hasUnlockedCharacter10 = Integer.parseInt(cursor.getString(0));
-
-        // log
-        Log.d(TAG + " getChr10", String.valueOf(hasUnlockedCharacter10));
-
-        // return result
-        return hasUnlockedCharacter10;
-    }
-    //endregion
-
-    //region DATA-SETTERS
     public void setCoins(int coins){
         // build the query
         String query = "UPDATE " + TABLE_DATA
@@ -499,120 +220,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.rawQuery(query, null);
     }
 
-    public void setHasUnlockedStage2(int hasUnlockedStage2){
+    public void setStagesUnlocked(String stagesUnlocked){
         // build the query
         String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDSTAGE2 + " = " + hasUnlockedStage2;
+                    + " SET " + KEY_DATA_STAGESUNLOCKED + " = " + stagesUnlocked;
 
         // get reference to writable database
         SQLiteDatabase db = this.getWritableDatabase();
         db.rawQuery(query, null);
     }
 
-    public void setHasUnlockedStage3(int hasUnlockedStage3){
+    public void setCharactersUnlocked(String charactersUnlocked){
         // build the query
         String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDSTAGE3 + " = " + hasUnlockedStage3;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter1(int hasUnlockedCharacter1){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER1 + " = " + hasUnlockedCharacter1;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter2(int hasUnlockedCharacter2){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER2 + " = " + hasUnlockedCharacter2;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter3(int hasUnlockedCharacter3){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER3 + " = " + hasUnlockedCharacter3;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter4(int hasUnlockedCharacter4){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER4 + " = " + hasUnlockedCharacter4;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter5(int hasUnlockedCharacter5){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER5 + " = " + hasUnlockedCharacter5;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter6(int hasUnlockedCharacter6){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER6 + " = " + hasUnlockedCharacter6;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter7(int hasUnlockedCharacter7){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER7 + " = " + hasUnlockedCharacter7;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter8(int hasUnlockedCharacter8){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER8 + " = " + hasUnlockedCharacter8;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter9(int hasUnlockedCharacter9){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER9 + " = " + hasUnlockedCharacter9;
-
-        // get reference to writable database
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.rawQuery(query, null);
-    }
-
-    public void setHasUnlockedCharacter10(int hasUnlockedCharacter10){
-        // build the query
-        String query = "UPDATE " + TABLE_DATA
-                    + " SET " + KEY_DATA_HASUNLOCKEDCHARACTER10 + " = " + hasUnlockedCharacter10;
+                    + " SET " + KEY_DATA_CHARACTERSUNLOCKED + " = " + charactersUnlocked;
 
         // get reference to writable database
         SQLiteDatabase db = this.getWritableDatabase();
