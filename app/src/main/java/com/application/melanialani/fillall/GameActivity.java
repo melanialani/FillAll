@@ -112,8 +112,133 @@ public class GameActivity extends AppCompatActivity {
                 changePicture(x, y, data.getResId_redDown(0), data.getResId_redDown(1),
                         data.getResId_redDown(2), data.getResId_redDown(3), data.getResId_redDown(4));
             }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("PUR")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_purRight(0), data.getResId_purRight(1),
+                        data.getResId_purRight(2), data.getResId_purRight(3), data.getResId_purRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_purLeft(0), data.getResId_purLeft(1),
+                        data.getResId_purLeft(2), data.getResId_purLeft(3), data.getResId_purLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_purUp(0), data.getResId_purUp(1),
+                        data.getResId_purUp(2), data.getResId_purUp(3), data.getResId_purUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_purDown(0), data.getResId_purDown(1),
+                        data.getResId_purDown(2), data.getResId_purDown(3), data.getResId_purDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("PIKA")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_pikaRight(0), data.getResId_pikaRight(1),
+                        data.getResId_pikaRight(2), data.getResId_pikaRight(3), data.getResId_pikaRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_pikaLeft(0), data.getResId_pikaLeft(1),
+                        data.getResId_pikaLeft(2), data.getResId_pikaLeft(3), data.getResId_pikaLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_pikaUp(0), data.getResId_pikaUp(1),
+                        data.getResId_pikaUp(2), data.getResId_pikaUp(3), data.getResId_pikaUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_pikaDown(0), data.getResId_pikaDown(1),
+                        data.getResId_pikaDown(2), data.getResId_pikaDown(3), data.getResId_pikaDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("OCE")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_oceRight(0), data.getResId_oceRight(1),
+                        data.getResId_oceRight(2), data.getResId_oceRight(3), data.getResId_oceRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_oceLeft(0), data.getResId_oceLeft(1),
+                        data.getResId_oceLeft(2), data.getResId_oceLeft(3), data.getResId_oceLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_oceUp(0), data.getResId_oceUp(1),
+                        data.getResId_oceUp(2), data.getResId_oceUp(3), data.getResId_oceUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_oceDown(0), data.getResId_oceDown(1),
+                        data.getResId_oceDown(2), data.getResId_oceDown(3), data.getResId_oceDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("LEMON")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_lemonRight(0), data.getResId_lemonRight(1),
+                        data.getResId_lemonRight(2), data.getResId_lemonRight(3), data.getResId_lemonRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_lemonLeft(0), data.getResId_lemonLeft(1),
+                        data.getResId_lemonLeft(2), data.getResId_lemonLeft(3), data.getResId_lemonLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_lemonUp(0), data.getResId_lemonUp(1),
+                        data.getResId_lemonUp(2), data.getResId_lemonUp(3), data.getResId_lemonUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_lemonDown(0), data.getResId_lemonDown(1),
+                        data.getResId_lemonDown(2), data.getResId_lemonDown(3), data.getResId_lemonDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("GEEKS")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_geeksRight(0), data.getResId_geeksRight(1),
+                        data.getResId_geeksRight(2), data.getResId_geeksRight(3), data.getResId_geeksRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_geeksLeft(0), data.getResId_geeksLeft(1),
+                        data.getResId_geeksLeft(2), data.getResId_geeksLeft(3), data.getResId_geeksLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_geeksUp(0), data.getResId_geeksUp(1),
+                        data.getResId_geeksUp(2), data.getResId_geeksUp(3), data.getResId_geeksUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_geeksDown(0), data.getResId_geeksDown(1),
+                        data.getResId_geeksDown(2), data.getResId_geeksDown(3), data.getResId_geeksDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("FLATRE")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_flatreRight(0), data.getResId_flatreRight(1),
+                        data.getResId_flatreRight(2), data.getResId_flatreRight(3), data.getResId_flatreRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_flatreLeft(0), data.getResId_flatreLeft(1),
+                        data.getResId_flatreLeft(2), data.getResId_flatreLeft(3), data.getResId_flatreLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_flatreUp(0), data.getResId_flatreUp(1),
+                        data.getResId_flatreUp(2), data.getResId_flatreUp(3), data.getResId_flatreUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_flatreDown(0), data.getResId_flatreDown(1),
+                        data.getResId_flatreDown(2), data.getResId_flatreDown(3), data.getResId_flatreDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("BULB")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_bulbRight(0), data.getResId_bulbRight(1),
+                        data.getResId_bulbRight(2), data.getResId_bulbRight(3), data.getResId_bulbRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_bulbLeft(0), data.getResId_bulbLeft(1),
+                        data.getResId_bulbLeft(2), data.getResId_bulbLeft(3), data.getResId_bulbLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_bulbUp(0), data.getResId_bulbUp(1),
+                        data.getResId_bulbUp(2), data.getResId_bulbUp(3), data.getResId_bulbUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_bulbDown(0), data.getResId_bulbDown(1),
+                        data.getResId_bulbDown(2), data.getResId_bulbDown(3), data.getResId_bulbDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("BLACK")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_blackRight(0), data.getResId_blackRight(1),
+                        data.getResId_blackRight(2), data.getResId_blackRight(3), data.getResId_blackRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_blackLeft(0), data.getResId_blackLeft(1),
+                        data.getResId_blackLeft(2), data.getResId_blackLeft(3), data.getResId_blackLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_blackUp(0), data.getResId_blackUp(1),
+                        data.getResId_blackUp(2), data.getResId_blackUp(3), data.getResId_blackUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_blackDown(0), data.getResId_blackDown(1),
+                        data.getResId_blackDown(2), data.getResId_blackDown(3), data.getResId_blackDown(4));
+            }
+        } else if (db.getChosenCharacter().equalsIgnoreCase("ATU")) {
+            if (move.equalsIgnoreCase("RIGHT")){
+                changePicture(x, y, data.getResId_atuRight(0), data.getResId_atuRight(1),
+                        data.getResId_atuRight(2), data.getResId_atuRight(3), data.getResId_atuRight(4));
+            } else if (move.equalsIgnoreCase("LEFT")){
+                changePicture(x, y, data.getResId_atuLeft(0), data.getResId_atuLeft(1),
+                        data.getResId_atuLeft(2), data.getResId_atuLeft(3), data.getResId_atuLeft(4));
+            } else if (move.equalsIgnoreCase("UP")){
+                changePicture(x, y, data.getResId_atuUp(0), data.getResId_atuUp(1),
+                        data.getResId_atuUp(2), data.getResId_atuUp(3), data.getResId_atuUp(4));
+            } else if (move.equalsIgnoreCase("DOWN")){
+                changePicture(x, y, data.getResId_atuDown(0), data.getResId_atuDown(1),
+                        data.getResId_atuDown(2), data.getResId_atuDown(3), data.getResId_atuDown(4));
+            }
         }
-
     }
 
     private void move(String action) {
