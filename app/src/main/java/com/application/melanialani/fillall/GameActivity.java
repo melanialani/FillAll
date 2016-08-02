@@ -801,7 +801,8 @@ public class GameActivity extends AppCompatActivity {
                     if (maps[x][y].equals("0")){
                         mapspict[x][y].setImageResource(R.drawable.blank);
                     } else if (maps[x][y].equals("1")){
-                        mapspict[x][y].setImageResource(R.drawable.flatre_ani0);
+                        //mapspict[x][y].setImageResource(R.drawable.flatre_ani0);
+                        setCharacterPicture(x, y, "RIGHT");
                     } else if (maps[x][y].equals("#")){
                         mapspict[x][y].setImageResource(R.drawable.block);
                     }
