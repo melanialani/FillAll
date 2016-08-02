@@ -40,7 +40,6 @@ public class GameActivity extends AppCompatActivity {
     private DatabaseHelper  db;
     //endregion
 
-    //region onCreate & swipe detector -> dont touch this if not necessary
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,133 +96,6 @@ public class GameActivity extends AppCompatActivity {
         // initiate swipe listener
         swipeDetector();
     }
-
-    @Override public boolean dispatchTouchEvent(MotionEvent event) {
-        swipe.dispatchTouchEvent(event);
-        return super.dispatchTouchEvent(event);
-    }
-
-    private void swipeDetector() {
-        swipe = new Swipe();
-        swipe.addListener(new SwipeListener() {
-            @Override public void onSwipingLeft(final MotionEvent event) { }
-
-            @Override public void onSwipedLeft(final MotionEvent event) {
-                if (!isMoving){
-                    if (!isReverse)
-                        move("LEFT");
-                    else
-                        move("RIGHT");
-                }
-            }
-
-            @Override public void onSwipingRight(final MotionEvent event) { }
-
-            @Override public void onSwipedRight(final MotionEvent event) {
-                if (!isMoving){
-                    if (!isReverse)
-                        move("RIGHT");
-                    else
-                        move("LEFT");
-                }
-            }
-
-            @Override public void onSwipingUp(final MotionEvent event) { }
-
-            @Override public void onSwipedUp(final MotionEvent event) {
-                if (!isMoving){
-                    if (!isReverse)
-                        move("UP");
-                    else
-                        move("DOWN");
-                }
-            }
-
-            @Override public void onSwipingDown(final MotionEvent event) { }
-
-            @Override public void onSwipedDown(final MotionEvent event) {
-                if (!isMoving){
-                    if (!isReverse)
-                        move("DOWN");
-                    else
-                        move("UP");
-                }
-            }
-        });
-    }
-    //endregion
-
-    //region animation changePicture
-    private void changePicture(final int x, final int y, final int resId0, final int resId1,
-                               final int resId2, final int resId3, final int resId4){
-        handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                mapspict[x][y].setImageResource(resId1);
-
-                handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        mapspict[x][y].setImageResource(resId2);
-
-                        handler = new Handler();
-                        handler.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                mapspict[x][y].setImageResource(resId3);
-
-                                handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        mapspict[x][y].setImageResource(resId4);
-
-                                        handler = new Handler();
-                                        handler.postDelayed(new Runnable() {
-                                            @Override
-                                            public void run() {
-                                                mapspict[x][y].setImageResource(resId3);
-
-                                                handler = new Handler();
-                                                handler.postDelayed(new Runnable() {
-                                                    @Override
-                                                    public void run() {
-                                                        mapspict[x][y].setImageResource(resId2);
-
-                                                        handler = new Handler();
-                                                        handler.postDelayed(new Runnable() {
-                                                            @Override
-                                                            public void run() {
-                                                                mapspict[x][y].setImageResource(resId1);
-
-                                                                handler = new Handler();
-                                                                handler.postDelayed(new Runnable() {
-                                                                    @Override
-                                                                    public void run() {
-                                                                        mapspict[x][y].setImageResource(resId0);
-
-                                                                        isMoving = false;
-                                                                    }
-                                                                }, 0);
-                                                            }
-                                                        }, 0);
-                                                    }
-                                                }, 0);
-                                            }
-                                        }, 0);
-                                    }
-                                }, 0);
-                            }
-                        }, 0);
-                    }
-                }, 0);
-            }
-        }, 0);
-
-    }
-    //endregion
 
     private void setCharacterPicture(final int x, final int y, final String move){
         if (data.getCharacter().equalsIgnoreCase("RED")) {
@@ -385,7 +257,235 @@ public class GameActivity extends AppCompatActivity {
         //Log.d("POSITION", posX + "," + posY + " - " + posX2 + "," + posY2);
     }
 
-    //region load levels -> button action here -> dont change if not necessary
+    //region check locked levels in stages
+    private void checkLockLevelStage1(){
+        levelView[1] = (ImageView) findViewById(R.id.level01);
+        levelView[2] = (ImageView) findViewById(R.id.level02);
+        levelView[3] = (ImageView) findViewById(R.id.level03);
+        levelView[4] = (ImageView) findViewById(R.id.level04);
+        levelView[5] = (ImageView) findViewById(R.id.level05);
+
+        //LEVEL01
+        if ( isLocked[1] == false ) {
+            levelView[1].setImageResource(R.drawable.level_1);
+        }
+        else {
+            levelView[1].setImageResource(R.drawable.level_1_closed);
+        }
+
+        //LEVEL02
+        if ( isLocked[2] == false ) {
+            levelView[2].setImageResource(R.drawable.level_2);
+        }
+        else {
+            levelView[2].setImageResource(R.drawable.level_2_closed);
+        }
+
+        //LEVEL03
+        if ( isLocked[3] == false ) {
+            levelView[3].setImageResource(R.drawable.level_3);
+        }
+        else {
+            levelView[3].setImageResource(R.drawable.level_3_closed);
+        }
+
+        //LEVEL04
+        if ( isLocked[4] == false ) {
+            levelView[4].setImageResource(R.drawable.level_4);
+        }
+        else {
+            levelView[4].setImageResource(R.drawable.level_4_closed);
+        }
+
+        //LEVEL05
+        if ( isLocked[5] == false ) {
+            levelView[5].setImageResource(R.drawable.level_5);
+        }
+        else {
+            levelView[5].setImageResource(R.drawable.level_5_closed);
+        }
+    }
+
+    private void checkLockLevelStage2(){
+        levelView[6] = (ImageView) findViewById(R.id.level06);
+        levelView[7] = (ImageView) findViewById(R.id.level07);
+        levelView[8] = (ImageView) findViewById(R.id.level08);
+        levelView[9] = (ImageView) findViewById(R.id.level09);
+        levelView[10] = (ImageView) findViewById(R.id.level10);
+
+        //LEVEL06
+        if ( isLocked[6] == false ) {
+            levelView[6].setImageResource(R.drawable.level_6);
+        }
+        else {
+            levelView[6].setImageResource(R.drawable.level_6_closed);
+        }
+
+        //LEVEL07
+        if ( isLocked[7] == false ) {
+            levelView[7].setImageResource(R.drawable.level_7);
+        }
+        else {
+            levelView[7].setImageResource(R.drawable.level_7_closed);
+        }
+
+        //LEVEL08
+        if ( isLocked[8] == false ) {
+            levelView[8].setImageResource(R.drawable.level_8);
+        }
+        else {
+            levelView[8].setImageResource(R.drawable.level_8_closed);
+        }
+
+        //LEVEL09
+        if ( isLocked[9] == false ) {
+            levelView[9].setImageResource(R.drawable.level_9);
+        }
+        else {
+            levelView[9].setImageResource(R.drawable.level_9_closed);
+        }
+
+        //LEVEL10
+        if ( isLocked[10] == false ) {
+            levelView[10].setImageResource(R.drawable.level_10);
+        }
+        else {
+            levelView[10].setImageResource(R.drawable.level_10_closed);
+        }
+    }
+
+    private void checkLockLevelStage3(){
+        levelView[11] = (ImageView) findViewById(R.id.level11);
+        levelView[12] = (ImageView) findViewById(R.id.level12);
+        levelView[13] = (ImageView) findViewById(R.id.level13);
+        levelView[14] = (ImageView) findViewById(R.id.level14);
+        levelView[15] = (ImageView) findViewById(R.id.level15);
+
+        //LEVEL10
+        if ( isLocked[10] == false ) {
+            levelView[10].setImageResource(R.drawable.level_10);
+        }
+        else {
+            levelView[10].setImageResource(R.drawable.level_10_closed);
+        }
+
+        //LEVEL11
+        if ( isLocked[11] == false ) {
+            levelView[11].setImageResource(R.drawable.level_11);
+        }
+        else {
+            levelView[11].setImageResource(R.drawable.level_11_closed);
+        }
+
+        //LEVEL12
+        if ( isLocked[12] == false ) {
+            levelView[12].setImageResource(R.drawable.level_12);
+        }
+        else {
+            levelView[12].setImageResource(R.drawable.level_12_closed);
+        }
+
+        //LEVEL13
+        if ( isLocked[13] == false ) {
+            levelView[13].setImageResource(R.drawable.level_13);
+        }
+        else {
+            levelView[13].setImageResource(R.drawable.level_13_closed);
+        }
+
+        //LEVEL14
+        if ( isLocked[14] == false ) {
+            levelView[14].setImageResource(R.drawable.level_14);
+        }
+        else {
+            levelView[14].setImageResource(R.drawable.level_14_closed);
+        }
+
+        //LEVEL15
+        if ( isLocked[15] == false ) {
+            levelView[15].setImageResource(R.drawable.level_15);
+        }
+        else {
+            levelView[15].setImageResource(R.drawable.level_15_closed);
+        }
+    }
+    //endregion
+
+    //region dont change if not necessary
+
+    //region animation changePicture -> handler here
+    private void changePicture(final int x, final int y, final int resId0, final int resId1,
+                               final int resId2, final int resId3, final int resId4){
+        handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mapspict[x][y].setImageResource(resId1);
+
+                handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mapspict[x][y].setImageResource(resId2);
+
+                        handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                mapspict[x][y].setImageResource(resId3);
+
+                                handler = new Handler();
+                                handler.postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        mapspict[x][y].setImageResource(resId4);
+
+                                        handler = new Handler();
+                                        handler.postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                mapspict[x][y].setImageResource(resId3);
+
+                                                handler = new Handler();
+                                                handler.postDelayed(new Runnable() {
+                                                    @Override
+                                                    public void run() {
+                                                        mapspict[x][y].setImageResource(resId2);
+
+                                                        handler = new Handler();
+                                                        handler.postDelayed(new Runnable() {
+                                                            @Override
+                                                            public void run() {
+                                                                mapspict[x][y].setImageResource(resId1);
+
+                                                                handler = new Handler();
+                                                                handler.postDelayed(new Runnable() {
+                                                                    @Override
+                                                                    public void run() {
+                                                                        mapspict[x][y].setImageResource(resId0);
+
+                                                                        isMoving = false;
+                                                                    }
+                                                                }, 0);
+                                                            }
+                                                        }, 0);
+                                                    }
+                                                }, 0);
+                                            }
+                                        }, 0);
+                                    }
+                                }, 0);
+                            }
+                        }, 0);
+                    }
+                }, 0);
+            }
+        }, 0);
+
+    }
+    //endregion
+
+    //region load levels -> button action for levels here
     public void level1(View v){
         // get data from data
         if ( isLocked[1] == false ) {
@@ -512,7 +612,7 @@ public class GameActivity extends AppCompatActivity {
     }
     //endregion
 
-    //region initiate new map & define map -> also dont change if not necessary
+    //region initiate new map & define map
     private void initiateNewMap(){
         this.lebar = data.getLebar();
         this.tinggi = data.getTinggi();
@@ -825,155 +925,61 @@ public class GameActivity extends AppCompatActivity {
     }
     //endregion
 
-    private void checkLockLevelStage1(){
-        levelView[1] = (ImageView) findViewById(R.id.level01);
-        levelView[2] = (ImageView) findViewById(R.id.level02);
-        levelView[3] = (ImageView) findViewById(R.id.level03);
-        levelView[4] = (ImageView) findViewById(R.id.level04);
-        levelView[5] = (ImageView) findViewById(R.id.level05);
-
-        //LEVEL01
-        if ( isLocked[1] == false ) {
-            levelView[1].setImageResource(R.drawable.level_1);
-        }
-        else {
-            levelView[1].setImageResource(R.drawable.level_1_closed);
-        }
-
-        //LEVEL02
-        if ( isLocked[2] == false ) {
-            levelView[2].setImageResource(R.drawable.level_2);
-        }
-        else {
-            levelView[2].setImageResource(R.drawable.level_2_closed);
-        }
-
-        //LEVEL03
-        if ( isLocked[3] == false ) {
-            levelView[3].setImageResource(R.drawable.level_3);
-        }
-        else {
-            levelView[3].setImageResource(R.drawable.level_3_closed);
-        }
-
-        //LEVEL04
-        if ( isLocked[4] == false ) {
-            levelView[4].setImageResource(R.drawable.level_4);
-        }
-        else {
-            levelView[4].setImageResource(R.drawable.level_4_closed);
-        }
-
-        //LEVEL05
-        if ( isLocked[5] == false ) {
-            levelView[5].setImageResource(R.drawable.level_5);
-        }
-        else {
-            levelView[5].setImageResource(R.drawable.level_5_closed);
-        }
+    //region swipe detector
+    @Override public boolean dispatchTouchEvent(MotionEvent event) {
+        swipe.dispatchTouchEvent(event);
+        return super.dispatchTouchEvent(event);
     }
 
-    private void checkLockLevelStage2(){
-        levelView[6] = (ImageView) findViewById(R.id.level06);
-        levelView[7] = (ImageView) findViewById(R.id.level07);
-        levelView[8] = (ImageView) findViewById(R.id.level08);
-        levelView[9] = (ImageView) findViewById(R.id.level09);
-        levelView[10] = (ImageView) findViewById(R.id.level10);
+    private void swipeDetector() {
+        swipe = new Swipe();
+        swipe.addListener(new SwipeListener() {
+            @Override public void onSwipingLeft(final MotionEvent event) { }
 
-        //LEVEL06
-        if ( isLocked[6] == false ) {
-            levelView[6].setImageResource(R.drawable.level_6);
-        }
-        else {
-            levelView[6].setImageResource(R.drawable.level_6_closed);
-        }
+            @Override public void onSwipedLeft(final MotionEvent event) {
+                if (!isMoving){
+                    if (!isReverse)
+                        move("LEFT");
+                    else
+                        move("RIGHT");
+                }
+            }
 
-        //LEVEL07
-        if ( isLocked[7] == false ) {
-            levelView[7].setImageResource(R.drawable.level_7);
-        }
-        else {
-            levelView[7].setImageResource(R.drawable.level_7_closed);
-        }
+            @Override public void onSwipingRight(final MotionEvent event) { }
 
-        //LEVEL08
-        if ( isLocked[8] == false ) {
-            levelView[8].setImageResource(R.drawable.level_8);
-        }
-        else {
-            levelView[8].setImageResource(R.drawable.level_8_closed);
-        }
+            @Override public void onSwipedRight(final MotionEvent event) {
+                if (!isMoving){
+                    if (!isReverse)
+                        move("RIGHT");
+                    else
+                        move("LEFT");
+                }
+            }
 
-        //LEVEL09
-        if ( isLocked[9] == false ) {
-            levelView[9].setImageResource(R.drawable.level_9);
-        }
-        else {
-            levelView[9].setImageResource(R.drawable.level_9_closed);
-        }
+            @Override public void onSwipingUp(final MotionEvent event) { }
 
-        //LEVEL10
-        if ( isLocked[10] == false ) {
-            levelView[10].setImageResource(R.drawable.level_10);
-        }
-        else {
-            levelView[10].setImageResource(R.drawable.level_10_closed);
-        }
+            @Override public void onSwipedUp(final MotionEvent event) {
+                if (!isMoving){
+                    if (!isReverse)
+                        move("UP");
+                    else
+                        move("DOWN");
+                }
+            }
+
+            @Override public void onSwipingDown(final MotionEvent event) { }
+
+            @Override public void onSwipedDown(final MotionEvent event) {
+                if (!isMoving){
+                    if (!isReverse)
+                        move("DOWN");
+                    else
+                        move("UP");
+                }
+            }
+        });
     }
+    //endregion
 
-    private void checkLockLevelStage3(){
-        levelView[11] = (ImageView) findViewById(R.id.level11);
-        levelView[12] = (ImageView) findViewById(R.id.level12);
-        levelView[13] = (ImageView) findViewById(R.id.level13);
-        levelView[14] = (ImageView) findViewById(R.id.level14);
-        levelView[15] = (ImageView) findViewById(R.id.level15);
-
-        //LEVEL10
-        if ( isLocked[10] == false ) {
-            levelView[10].setImageResource(R.drawable.level_10);
-        }
-        else {
-            levelView[10].setImageResource(R.drawable.level_10_closed);
-        }
-
-        //LEVEL11
-        if ( isLocked[11] == false ) {
-            levelView[11].setImageResource(R.drawable.level_11);
-        }
-        else {
-            levelView[11].setImageResource(R.drawable.level_11_closed);
-        }
-
-        //LEVEL12
-        if ( isLocked[12] == false ) {
-            levelView[12].setImageResource(R.drawable.level_12);
-        }
-        else {
-            levelView[12].setImageResource(R.drawable.level_12_closed);
-        }
-
-        //LEVEL13
-        if ( isLocked[13] == false ) {
-            levelView[13].setImageResource(R.drawable.level_13);
-        }
-        else {
-            levelView[13].setImageResource(R.drawable.level_13_closed);
-        }
-
-        //LEVEL14
-        if ( isLocked[14] == false ) {
-            levelView[14].setImageResource(R.drawable.level_14);
-        }
-        else {
-            levelView[14].setImageResource(R.drawable.level_14_closed);
-        }
-
-        //LEVEL15
-        if ( isLocked[15] == false ) {
-            levelView[15].setImageResource(R.drawable.level_15);
-        }
-        else {
-            levelView[15].setImageResource(R.drawable.level_15_closed);
-        }
-    }
+    //endregion
 }
