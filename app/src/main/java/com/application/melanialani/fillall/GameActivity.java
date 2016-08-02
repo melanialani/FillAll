@@ -1,6 +1,7 @@
 package com.application.melanialani.fillall;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
@@ -30,14 +31,13 @@ public class GameActivity extends AppCompatActivity {
     private boolean[]       isLocked;
     private ImageView[]     levelView;
 
-    private int             lebar, tinggi, posX, posY, posX2, posY2;
+    private int             lebar, tinggi, posX, posY, posX2, posY2, posLevel;
     private boolean         player2, isReverse, isMoving;
 
     private Handler         handler;
-    private String          character;
-
     private Data            data;
     private DatabaseHelper  db;
+    private MediaPlayer     player;
     //endregion
 
     @Override
@@ -86,6 +86,7 @@ public class GameActivity extends AppCompatActivity {
         maps = new String[tinggi][lebar];
         mapspict = new ImageView[tinggi][lebar];
         data = new Data();
+        posLevel = 0;
 
         // if dbVersion = 1, update it!
         db = new DatabaseHelper(GameActivity.this); // connect to database
@@ -242,6 +243,9 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void move(String action) {
+        // play sound srut
+        playSound(4);
+
         if (action.equalsIgnoreCase("RIGHT")){ // x same, y plus
             int posYwanted = posY + 1;
             for (int y = posYwanted; y < lebar; y++){
@@ -379,7 +383,54 @@ public class GameActivity extends AppCompatActivity {
             }
         }
 
-        //Log.d("POSITION", posX + "," + posY + " - " + posX2 + "," + posY2);
+        if(isWin()) {
+            System.out.println("masukinn gan"+data.getPosPlay());
+            unlockLevel();
+
+            // gotoMainMenu();
+            Intent callerIntent = getIntent();
+            if (callerIntent.getStringExtra("stage").equals("1")) {
+                setContentView(R.layout.menu_stage1);
+                checkLockLevelStage1();
+            } else if (callerIntent.getStringExtra("stage").equals("2")) {
+                setContentView(R.layout.menu_stage2);
+                checkLockLevelStage2();
+            } else if (callerIntent.getStringExtra("stage").equals("3")) {
+                setContentView(R.layout.menu_stage3);
+                checkLockLevelStage3();
+            }
+        }
+    }
+
+    private boolean isWin() {
+        boolean cek=true;
+        for(int i=0;i<tinggi;i++) {
+            for(int j=0;j<lebar;j++) {
+                if(maps[i][j].equals("0"))
+                    cek=false;
+            }
+        }
+        return cek;
+    }
+
+    private void unlockLevel(){
+        if(!isLocked[data.getPosPlay()]) {
+            System.out.println("masukinn unlock");
+            isLocked[data.getPosPlay()+1]=false;
+            for(int i=1;i<=15;i++) {
+                if(isLocked[i]) {
+                    System.out.println("tian true");
+                } else {
+                    System.out.println("tian false");
+                }
+            }
+        }
+    }
+
+    private void gotoMainMenu(){
+        Intent characterIntent = new Intent(GameActivity.this, MainActivity.class);
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(characterIntent);
     }
 
     //region check locked levels in stages
@@ -537,6 +588,10 @@ public class GameActivity extends AppCompatActivity {
     //endregion
 
     //region dont change if not necessary
+    public void reloadGame(View view){
+        data.setLevel(data.getLevel());
+        initiateNewMap();
+    }
 
     //region animation changePicture -> handler here
     private void changePicture(final int x, final int y, final int resId0, final int resId1,
@@ -614,6 +669,7 @@ public class GameActivity extends AppCompatActivity {
     public void level1(View v){
         // get data from data
         if ( isLocked[1] == false ) {
+            playSound(2);
             data.setLevel(1);
             initiateNewMap();
         }
@@ -622,6 +678,7 @@ public class GameActivity extends AppCompatActivity {
     public void level2(View v){
         // get data from data
         if ( isLocked[2] == false ) {
+            playSound(2);
             data.setLevel(2);
             initiateNewMap();
         }
@@ -630,6 +687,7 @@ public class GameActivity extends AppCompatActivity {
     public void level3(View v){
         // get data from data
         if ( isLocked[3] == false ) {
+            playSound(2);
             data.setLevel(3);
             initiateNewMap();
         }
@@ -638,6 +696,7 @@ public class GameActivity extends AppCompatActivity {
     public void level4(View v){
         // get data from data
         if ( isLocked[4] == false ) {
+            playSound(2);
             data.setLevel(4);
             initiateNewMap();
         }
@@ -646,6 +705,7 @@ public class GameActivity extends AppCompatActivity {
     public void level5(View v){
         // get data from data
         if ( isLocked[5] == false ) {
+            playSound(2);
             data.setLevel(5);
             initiateNewMap();
         }
@@ -654,6 +714,7 @@ public class GameActivity extends AppCompatActivity {
     public void level6(View v){
         // get data from data
         if ( isLocked[6] == false ) {
+            playSound(2);
             data.setLevel(6);
             initiateNewMap();
         }
@@ -662,6 +723,7 @@ public class GameActivity extends AppCompatActivity {
     public void level7(View v){
         // get data from data
         if ( isLocked[7] == false ) {
+            playSound(2);
             data.setLevel(7);
             initiateNewMap();
         }
@@ -670,6 +732,7 @@ public class GameActivity extends AppCompatActivity {
     public void level8(View v){
         // get data from data
         if ( isLocked[8] == false ) {
+            playSound(2);
             data.setLevel(8);
             initiateNewMap();
         }
@@ -678,6 +741,7 @@ public class GameActivity extends AppCompatActivity {
     public void level9(View v){
         // get data from data
         if ( isLocked[9] == false ) {
+            playSound(2);
             data.setLevel(9);
             initiateNewMap();
         }
@@ -686,6 +750,7 @@ public class GameActivity extends AppCompatActivity {
     public void level10(View v){
         // get data from data
         if ( isLocked[10] == false ) {
+            playSound(2);
             data.setLevel(10);
             initiateNewMap();
         }
@@ -694,6 +759,7 @@ public class GameActivity extends AppCompatActivity {
     public void level11(View v){
         // get data from data
         if ( isLocked[11] == false ) {
+            playSound(2);
             data.setLevel(11);
             this.isReverse = true;
             initiateNewMap();
@@ -703,6 +769,7 @@ public class GameActivity extends AppCompatActivity {
     public void level12(View v){
         // get data from data
         if ( isLocked[12] == false ) {
+            playSound(2);
             data.setLevel(12);
             this.isReverse = true;
             initiateNewMap();
@@ -712,6 +779,7 @@ public class GameActivity extends AppCompatActivity {
     public void level13(View v){
         // get data from data
         if ( isLocked[13] == false ) {
+            playSound(2);
             data.setLevel(13);
             this.isReverse = true;
             initiateNewMap();
@@ -721,6 +789,7 @@ public class GameActivity extends AppCompatActivity {
     public void level14(View v){
         // get data from data
         if ( isLocked[14] == false ) {
+            playSound(2);
             data.setLevel(14);
             this.isReverse = true;
             initiateNewMap();
@@ -730,6 +799,7 @@ public class GameActivity extends AppCompatActivity {
     public void level15(View v){
         // get data from data
         if ( isLocked[15] == false ) {
+            playSound(2);
             data.setLevel(15);
             this.isReverse = true;
             initiateNewMap();
@@ -1106,6 +1176,33 @@ public class GameActivity extends AppCompatActivity {
         });
     }
     //endregion
+    //endregion
 
+    //region play sound
+    public void playSound(int arg){
+        try{
+            if (player.isPlaying()) {
+                player.stop();
+                player.release();
+            }
+
+        } catch(Exception e){
+            Log.e("play_sound", e.toString());
+        }
+
+        if(arg==1){
+            player = MediaPlayer.create(this, R.raw.tombol);
+        } else if(arg==2){
+            player= MediaPlayer.create(this, R.raw.tut);
+        } else if(arg==3){
+            player= MediaPlayer.create(this, R.raw.themesong3);
+        } else if(arg==4){
+            player= MediaPlayer.create(this, R.raw.srut);
+        }
+
+        // Set looping
+        player.setLooping(false);
+        player.start();
+    }
     //endregion
 }

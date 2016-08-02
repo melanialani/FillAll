@@ -21,43 +21,72 @@
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:id="@+id/img1"
-            android:src="@drawable/blank"/>
+            android:onClick="chooseplayer1"
+            android:src="@drawable/atu_ani0"/>
         <ImageView
             android:layout_margin="0dp"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:id="@+id/img2"
-            android:src="@drawable/blank"/>
+            android:onClick="chooseplayer2"
+            android:src="@drawable/black_ani0"
+            />
         <ImageView
             android:layout_margin="0dp"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:id="@+id/img3"
-            android:src="@drawable/blank"/>
+            android:onClick="chooseplayer3"
+            android:src="@drawable/bulb_ani0"/>
         <ImageView
             android:layout_margin="0dp"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:id="@+id/img4"
-            android:src="@drawable/blank"/>
+            android:onClick="chooseplayer4"
+            android:src="@drawable/flatre_ani0"/>
         <ImageView
             android:layout_margin="0dp"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:id="@+id/img5"
-            android:src="@drawable/blank"/>
+            android:onClick="chooseplayer5"
+            android:src="@drawable/geeks_ani0"/>
         <ImageView
             android:layout_margin="0dp"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:id="@+id/img6"
-            android:src="@drawable/blank"/>
+            android:onClick="chooseplayer6"
+            android:src="@drawable/lemon_ani0"/>
         <ImageView
             android:layout_margin="0dp"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:id="@+id/img7"
-            android:src="@drawable/blank"/>
+            android:onClick="chooseplayer7"
+            android:src="@drawable/oce_ani0"/>
+        <ImageView
+            android:layout_margin="0dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/img8"
+            android:onClick="chooseplayer8"
+            android:src="@drawable/pika_ani0"/>
+        <ImageView
+            android:layout_margin="0dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/img9"
+            android:onClick="chooseplayer9"
+            android:src="@drawable/pur_ani0"/>
+        <ImageView
+            android:layout_margin="0dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/img10"
+            android:onClick="chooseplayer10"
+            android:src="@drawable/red_ani0"/>
     </LinearLayout>
 
 </RelativeLayout>

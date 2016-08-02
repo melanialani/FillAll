@@ -1,10 +1,12 @@
 package com.application.melanialani.fillall;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,15 +20,15 @@ public class CharacterActivity extends AppCompatActivity {
     private TextView text;
     private ImageView img1,img2,img3;
 
-    ImageView[] img= new ImageView[7];
+    ImageView[] img = new ImageView[10];
 
     private int currentChar;
 
-    boolean isBackPosition=false;
+    boolean isBackPosition = false;
     boolean isTouch;
 
     private Handler         handler;
-    private Runnable        runnable;
+    private DatabaseHelper  db;
 
 
     @Override
@@ -44,9 +46,13 @@ public class CharacterActivity extends AppCompatActivity {
         img[4]=(ImageView) findViewById(R.id.img5);
         img[5]=(ImageView) findViewById(R.id.img6);
         img[6]=(ImageView) findViewById(R.id.img7);
+        img[7]=(ImageView) findViewById(R.id.img8);
+        img[8]=(ImageView) findViewById(R.id.img9);
+        img[9]=(ImageView) findViewById(R.id.img10);
+
+        db= new DatabaseHelper(CharacterActivity.this);
 
         swipeDetector();
-
     }
 
     @Override public boolean dispatchTouchEvent(MotionEvent event) {
@@ -143,7 +149,6 @@ public class CharacterActivity extends AppCompatActivity {
             img[i].setX(img[i].getX()+interval);
         }
 
-
     }
 
     private void moving_left_animation() {
@@ -156,7 +161,7 @@ public class CharacterActivity extends AppCompatActivity {
 
     private void back_position(){
 
-        if(img[currentChar].getX()<=100 )
+        if(img[currentChar].getX()<=75 )
         {
             try{
                 for(int i=0;i<img.length;i++)
@@ -168,7 +173,7 @@ public class CharacterActivity extends AppCompatActivity {
                 Log.e("move_ERR", ex.toString());
             }
         }
-        else if(img[currentChar].getX()>=110 )
+        else if(img[currentChar].getX()>=100 )
         {
             try{
                 for(int i=0;i<img.length;i++)
@@ -188,15 +193,80 @@ public class CharacterActivity extends AppCompatActivity {
 
     }
 
-    private void coba(){
-        handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
+    // belum dimasukin database
+    public void chooseplayer1(View view){
+        String character="atu";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
 
-                img[currentChar].setX(img[currentChar].getX()+100);
+    public void chooseplayer2(View view){
+        String character="black";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
 
-            }
-        }, 300);
+    public void chooseplayer3(View view){
+        String character="bulb";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    public void chooseplayer4(View view){
+        String character="flatre";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    public void chooseplayer5(View view){
+        String character="geeks";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    public void chooseplayer6(View view){
+        String character="lemon";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    public void chooseplayer7(View view){
+        String character="oce";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    public void chooseplayer8(View view){
+        String character="pika";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    public void chooseplayer9(View view){
+        String character="pur";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    public void chooseplayer10(View view){
+        String character="red";
+        Toast toast = Toast.makeText(getApplicationContext(), character,Toast.LENGTH_SHORT);
+        toast.show();
+        gotoMainMenu();
+    }
+
+    private void gotoMainMenu(){
+        Intent characterIntent = new Intent(CharacterActivity.this, MainActivity.class);
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(characterIntent);
     }
 }

@@ -5,6 +5,8 @@
     android:background="#ffffff"
     android:weightSum="8">
 
+    <include layout="@layout/menu_top_bar"/>
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"

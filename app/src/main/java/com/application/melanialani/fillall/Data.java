@@ -3,9 +3,11 @@ package com.application.melanialani.fillall;
 public class Data {
 
     //region variables
-    private int             tinggi, lebar, posX, posY, posX2, posY2;
+    private int             tinggi, lebar, posX, posY, posX2, posY2, level, coin, posPlay;
+    private int[]           priceCharacter, priceStage;
     private String[][]      map;
     private boolean         player2;
+    private String          character;
     //endregion
 
     //region constanta animation
@@ -529,6 +531,8 @@ public class Data {
     //endregion
 
     public void setLevel(int level){
+        this.level = level;
+
         if (level == 1) this.level1();
         else if (level == 2) this.level2();
         else if (level == 3) this.level3();
@@ -550,6 +554,10 @@ public class Data {
     }
 
     //region GETTERS for mapping level
+    public int getLevel() {
+        return level;
+    }
+
     public int getTinggi() {
         return tinggi;
     }
@@ -751,6 +759,36 @@ public class Data {
 
     public int getResId_redDown(int index) {
         return red_down[index];
+    }
+    //endregion
+
+    //region GETTERS
+    public int getPosPlay() {
+        return posPlay;
+    }
+
+    public int getCoin(){
+        return this.coin;
+    }
+
+    public void setCoin(int in){
+        this.coin=in;
+    }
+
+    public int getpriceCharacter(int idx){
+        return this.priceCharacter[idx];
+    }
+
+    public void setPriceCharacter(int in,int idx){
+        this.priceCharacter[idx]=in;
+    }
+
+    public int getpriceStage(int idx){
+        return this.priceCharacter[idx];
+    }
+
+    public void setPriceStage(int in,int idx){
+        this.priceStage[idx]=in;
     }
     //endregion
 }
