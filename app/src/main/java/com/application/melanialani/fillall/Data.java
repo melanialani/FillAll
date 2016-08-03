@@ -4,10 +4,11 @@ public class Data {
 
     //region variables
     private int             tinggi, lebar, posX, posY, posX2, posY2, level, coin, posPlay;
-    private int[]           priceCharacter, priceStage;
     private String[][]      map;
     private boolean         player2;
     private String          character;
+
+    private final int[] priceCharacter = {0, 300, 300, 500, 500, 800, 800, 800, 300, 300};
     //endregion
 
     //region constanta animation
@@ -551,6 +552,7 @@ public class Data {
 
         if (level >= 1 && level <= 5) this.player2 = false;
         else this.player2 = true;
+        this.posPlay=level;
     }
 
     //region GETTERS for mapping level
@@ -762,33 +764,11 @@ public class Data {
     }
     //endregion
 
-    //region GETTERS
     public int getPosPlay() {
         return posPlay;
-    }
-
-    public int getCoin(){
-        return this.coin;
-    }
-
-    public void setCoin(int in){
-        this.coin=in;
     }
 
     public int getpriceCharacter(int idx){
         return this.priceCharacter[idx];
     }
-
-    public void setPriceCharacter(int in,int idx){
-        this.priceCharacter[idx]=in;
-    }
-
-    public int getpriceStage(int idx){
-        return this.priceCharacter[idx];
-    }
-
-    public void setPriceStage(int in,int idx){
-        this.priceStage[idx]=in;
-    }
-    //endregion
 }

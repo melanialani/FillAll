@@ -1,0 +1,2194 @@
+[
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_level.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\bg_level.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\block.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\block.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\stage_1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\stage_1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bulb_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\bulb_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flatre_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\flatre_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_12.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_12.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flatre_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\flatre_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\black_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_8.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_8.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\red_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_2_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\stage_2_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_14.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_14.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_1_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\stage_1_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blank.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\blank.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_3_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\stage_3_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\coin.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\geeks_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\geeks_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pur_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pur_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_splash.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\bg_splash.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pur_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\pur_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_main.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\bg_main.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_complete.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_complete.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_8.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_8.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_7.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_7.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_10.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_10.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\characters.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\characters.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_8_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_8_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_6_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_6_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_4_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_4_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_main.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\bg_main.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\black_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bulb_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\bulb_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin_400.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\coin_400.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pur_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pur_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_2_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_2_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_7.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_7.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lemon_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\lemon_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_13.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_13.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin_300.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\coin_300.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\black_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_7_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_7_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_8_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_8_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\geeks_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\geeks_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_15.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_15.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_10_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_10_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\black_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_13_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_13_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin_350.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\coin_350.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_14_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_14_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_9.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_9.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_9.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_9.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_12.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_12.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_14_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_14_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\stage_3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bulb_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\bulb_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_complete.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_complete.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\black_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_7_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_7_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_4_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_4_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\logo_3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oce_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\oce_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\logo_2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_3_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_3_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_14.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_14.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_oce_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\geeks_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\geeks_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flatre_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\flatre_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_6.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_6.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lemon_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\lemon_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flatre_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\flatre_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\black_ani0.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\stage_3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oce_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\oce_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_level.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\bg_level.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\geeks_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\geeks_ani0.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_11_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_11_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_10.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_10.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_10_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_10_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lemon_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\lemon_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_1_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\stage_1_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_2_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\stage_2_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin_400.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\coin_400.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_3_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\stage_3_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reload.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\reload.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\characters.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\characters.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\red_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\red_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lemon_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\lemon_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_13_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_13_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_lemon_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_15_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_15_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pur_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pur_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_11.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_11.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_6.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_6.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_5_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_5_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\reload.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\reload.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_3_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_3_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_1_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_1_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\red_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oce_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\oce_ani0.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin_350.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\coin_350.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lemon_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\lemon_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_oce_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_5.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_5.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\block.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\block.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flatre_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\flatre_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_15.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_15.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lemon_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\lemon_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_6_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_6_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pika_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_9_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_9_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blank.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\blank.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\stage_2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin_300.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\coin_300.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\play.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\play.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\red_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\coin.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\coin.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_11_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_11_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_12_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_12_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\stage_2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\stage_2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_15_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_15_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\logo_3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\geeks_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\geeks_ani0.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_5.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_5.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_atu_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oce_ani0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\oce_ani0.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pur_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\pur_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pur_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\pur_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flatre_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\flatre_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pur_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_black_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_11.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_11.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_atu_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_oce_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_lemon_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_lemon_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\red_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bulb_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\bulb_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_red_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_red_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_atu_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_geeks_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_geeks_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_flatre_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_red_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_red_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bulb_ani0_locked.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\bulb_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_12_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_12_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_geeks_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\left_geeks_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\logo_2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_pika_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_pika_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oce_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\oce_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_bulb_ani1.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\right_bulb_ani1.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_bulb_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_pur_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_flatre_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_flatre_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_13.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_13.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_red_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_red_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_5_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_5_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_pur_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pur_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pika_ani3.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\play.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\play.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pika_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_pika_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\geeks_ani.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\geeks_ani.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_atu_ani4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_atu_ani4.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani4.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani4.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_9_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_9_closed.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_2_closed.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\level_2_closed.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bulb_ani0.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\bulb_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_black_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_black_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_lemon_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\down_lemon_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oce_ani.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\oce_ani.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_geeks_ani2.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\up_geeks_ani2.png"
+    },
+    {
+        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_splash.png",
+        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\drawable\\bg_splash.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_lemon_ani3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_lemon_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_1_closed.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_1_closed.png"
+    }
+]

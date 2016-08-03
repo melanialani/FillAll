@@ -1,5 +1,6 @@
 package com.application.melanialani.fillall;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Handler;
@@ -31,26 +32,288 @@ public class GameActivity extends AppCompatActivity {
     private boolean[]       isLocked;
     private ImageView[]     levelView;
 
-    private int             lebar, tinggi, posX, posY, posX2, posY2, posLevel;
+    private int             lebar, tinggi, posX, posY, posX2, posY2, posLevel, fromStage;
     private boolean         player2, isReverse, isMoving;
 
     private Handler         handler;
     private Data            data;
     private DatabaseHelper  db;
     private MediaPlayer     player;
+
+    public TextView         tvCoins;
     //endregion
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+
+        // connect to database
+        db = new DatabaseHelper(GameActivity.this);
 
         // initiate LOCKLEVEL variables
-        isLocked = new boolean[16];
-        isLocked[1] = false;
-        for ( int i = 2; i <= 15; i++ ) {
-            isLocked[i] = true;
+        initializeLockLevel();
+
+        // check stage
+        Intent callerIntent = getIntent();
+        if (callerIntent.getStringExtra("stage").equals("1")) {
+            fromStage = 1;
+            setContentView(R.layout.menu_stage1);
+            checkLockLevelStage1();
+        } else if (callerIntent.getStringExtra("stage").equals("2")) {
+            fromStage = 2;
+            setContentView(R.layout.menu_stage2);
+            checkLockLevelStage2();
+        } else if (callerIntent.getStringExtra("stage").equals("3")) {
+            fromStage = 3;
+            setContentView(R.layout.menu_stage3);
+            checkLockLevelStage3();
         }
+
+        // initiate variables;
+        maps = new String[tinggi][lebar];
+        mapspict = new ImageView[tinggi][lebar];
+        data = new Data();
+        posLevel = 0;
+
+        // initiate swipe listener
+        swipeDetector();
+    }
+
+    private void move(String action) {
+        // play sound srut
+        playSound(4);
+
+        if (action.equalsIgnoreCase("RIGHT")){ // x same, y plus
+            int posYwanted = posY + 1;
+            for (int y = posYwanted; y < lebar; y++){
+                try {
+                    if (maps[posX][y].equals("0")){
+                        maps[posX][y] = "1";
+                        posY = y;
+                        //mapspict[posX][y].setImageResource(R.drawable.all);
+                        setCharacterPicture(posX, posY, action);
+                    } else
+                        break;
+                } catch (Exception ex){
+                    Log.e("move_ERR", ex.toString());
+                }
+            }
+
+            if (player2){
+                int posY2wanted = posY2 + 1;
+                for (int y = posY2wanted; y < lebar; y++){
+                    try {
+                        if (maps[posX2][y].equals("0")){
+                            maps[posX2][y] = "1";
+                            posY2 = y;
+                            //mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
+                        } else
+                            break;
+                    } catch (Exception ex){
+                        Log.e("move_ERR", ex.toString());
+                    }
+                }
+            }
+
+        }
+
+        else if (action.equalsIgnoreCase("LEFT")){ // x same, y minus
+            int posYwanted = posY - 1;
+            for (int y = posYwanted; y >= 0; y--){
+                try {
+                    if (maps[posX][y].equals("0")){
+                        maps[posX][y] = "1";
+                        posY = y;
+                        //mapspict[posX][y].setImageResource(R.drawable.flatre_ani0);
+                        setCharacterPicture(posX, posY, action);
+                    } else
+                        break;
+                } catch (Exception ex){
+                    Log.e("move_ERR", ex.toString());
+                }
+            }
+
+            if (player2){
+                int posY2wanted = posY2 - 1;
+                for (int y = posY2wanted; y >= 0; y--){
+                    try {
+                        if (maps[posX2][y].equals("0")){
+                            maps[posX2][y] = "1";
+                            posY2 = y;
+                            //mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
+                        } else
+                            break;
+                    } catch (Exception ex){
+                        Log.e("move_ERR", ex.toString());
+                    }
+                }
+            }
+        }
+
+        else if (action.equalsIgnoreCase("DOWN")){ // x plus, y same
+            int posXwanted = posX + 1;
+            for (int x = posXwanted; x < tinggi; x++){
+                try {
+                    if (maps[x][posY].equals("0")){
+                        maps[x][posY] = "1";
+                        posX = x;
+                        //mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
+                        setCharacterPicture(posX, posY, action);
+                    } else
+                        break;
+                } catch (Exception ex){
+                    Log.e("move_ERR", ex.toString());
+                }
+            }
+
+            if (player2){
+                int posX2wanted = posX2 + 1;
+                for (int x = posX2wanted; x < tinggi; x++){
+                    try {
+                        if (maps[x][posY2].equals("0")){
+                            maps[x][posY2] = "1";
+                            posX2 = x;
+                            //mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
+                        } else
+                            break;
+                    } catch (Exception ex){
+                        Log.e("move_ERR", ex.toString());
+                    }
+                }
+            }
+        }
+
+        else if (action.equalsIgnoreCase("UP")){ // x minus, y same
+            int posXwanted = posX - 1;
+            for (int x = posXwanted; x >= 0; x--){
+                try {
+                    if (maps[x][posY].equals("0")){
+                        maps[x][posY] = "1";
+                        posX = x;
+                        //mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
+                        setCharacterPicture(posX, posY, action);
+                    } else
+                        break;
+                } catch (Exception ex){
+                    Log.e("move_ERR", ex.toString());
+                }
+            }
+
+            if (player2){
+                int posX2wanted = posX2 - 1;
+                for (int x = posX2wanted; x >= 0; x--){
+                    try {
+                        if (maps[x][posY2].equals("0")){
+                            maps[x][posY2] = "1";
+                            posX2 = x;
+                            //mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
+                            setCharacterPicture(posX2, posY2, action);
+                        } else
+                            break;
+                    } catch (Exception ex){
+                        Log.e("move_ERR", ex.toString());
+                    }
+                }
+            }
+        }
+
+        checkFinish();
+    }
+
+    //region win & after
+    private void checkFinish(){
+        if(isWin()) {
+            System.out.println("WIN LEVEL: " + data.getPosPlay());
+            unlockLevel();
+
+            // wait for 1 second & then show win message
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // show win screen
+                    setContentView(R.layout.win_message);
+                    ImageView ivCoin = (ImageView) findViewById(R.id.ivCoin);
+                    if ((data.getPosPlay() + 1) <= 5) {
+                        ivCoin.setImageResource(R.drawable.coin_300);
+
+                        // update database
+                        int totalCoin = db.getCoins() + 300;
+                        db.setCoins(totalCoin);
+                    } else if ((data.getPosPlay() + 1) > 5 && (data.getPosPlay() + 1) < 11) {
+                        ivCoin.setImageResource(R.drawable.coin_350);
+
+                        // update database
+                        int totalCoin = db.getCoins() + 350;
+                        db.setCoins(totalCoin);
+                    } else if ((data.getPosPlay() + 1) >= 11) {
+                        ivCoin.setImageResource(R.drawable.coin_400);
+
+                        // update database
+                        int totalCoin = db.getCoins() + 400;
+                        db.setCoins(totalCoin);
+                    }
+
+                    // show win screen for 4 second and then go to stage menu
+                    final Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (db.getLastLevel() == 6 || db.getLastLevel() == 11){
+                                // go to stage menu
+                                gotoStageMenu();
+                            } else if (fromStage == 1) {
+                                setContentView(R.layout.menu_stage1);
+                                checkLockLevelStage1();
+                            } else if (fromStage == 2) {
+                                setContentView(R.layout.menu_stage2);
+                                checkLockLevelStage2();
+                            } else if (fromStage == 3) {
+                                setContentView(R.layout.menu_stage3);
+                                checkLockLevelStage3();
+                            }
+                        }
+                    }, 4000);
+                }
+            }, 1000);
+        }
+    }
+
+    private boolean isWin() {
+        boolean cek = true;
+
+        // check if all squares are filled
+        for (int i = 0; i < tinggi; i++) {
+            for (int j = 0; j < lebar; j++) {
+                if (maps[i][j].equals("0"))
+                    cek = false;
+            }
+        }
+
+        return cek;
+    }
+
+    private void gotoStageMenu(){
+        Intent intentReturn = new Intent();
+
+        // set properties to return
+        intentReturn.putExtra("reload", true);
+
+        // return intent
+        setResult(Activity.RESULT_OK, intentReturn);
+
+        // close this activity
+        this.finish();
+    }
+    //endregion
+
+    //region initialize lock level & unlock level & check locked levels in stages
+    private void initializeLockLevel(){
+        isLocked = new boolean[16];
+        levelChecked();
 
         levelView = new ImageView[16];
         levelView[1] = (ImageView) findViewById(R.id.level01);
@@ -68,35 +331,186 @@ public class GameActivity extends AppCompatActivity {
         levelView[13] = (ImageView) findViewById(R.id.level13);
         levelView[14] = (ImageView) findViewById(R.id.level14);
         levelView[15] = (ImageView) findViewById(R.id.level15);
-
-        // check stage
-        Intent callerIntent = getIntent();
-        if (callerIntent.getStringExtra("stage").equals("1")) {
-            setContentView(R.layout.menu_stage1);
-            checkLockLevelStage1();
-        } else if (callerIntent.getStringExtra("stage").equals("2")) {
-            setContentView(R.layout.menu_stage2);
-            checkLockLevelStage2();
-        } else if (callerIntent.getStringExtra("stage").equals("3")) {
-            setContentView(R.layout.menu_stage3);
-            checkLockLevelStage3();
-        }
-
-        // initiate variables;
-        maps = new String[tinggi][lebar];
-        mapspict = new ImageView[tinggi][lebar];
-        data = new Data();
-        posLevel = 0;
-
-        // if dbVersion = 1, update it!
-        db = new DatabaseHelper(GameActivity.this); // connect to database
-        if (db.getDBVersion() == 1){
-            db.updateDBVersion(); // update dbversion to 2
-        }
-
-        // initiate swipe listener
-        swipeDetector();
     }
+
+    private void checkLockLevelStage1(){
+        levelView[1] = (ImageView) findViewById(R.id.level01);
+        levelView[2] = (ImageView) findViewById(R.id.level02);
+        levelView[3] = (ImageView) findViewById(R.id.level03);
+        levelView[4] = (ImageView) findViewById(R.id.level04);
+        levelView[5] = (ImageView) findViewById(R.id.level05);
+
+        //LEVEL01
+        if ( isLocked[1] == false ) {
+            levelView[1].setImageResource(R.drawable.level_1);
+        }
+        else {
+            levelView[1].setImageResource(R.drawable.level_1_closed);
+        }
+
+        //LEVEL02
+        if ( isLocked[2] == false ) {
+            levelView[2].setImageResource(R.drawable.level_2);
+        }
+        else {
+            levelView[2].setImageResource(R.drawable.level_2_closed);
+        }
+
+        //LEVEL03
+        if ( isLocked[3] == false ) {
+            levelView[3].setImageResource(R.drawable.level_3);
+        }
+        else {
+            levelView[3].setImageResource(R.drawable.level_3_closed);
+        }
+
+        //LEVEL04
+        if ( isLocked[4] == false ) {
+            levelView[4].setImageResource(R.drawable.level_4);
+        }
+        else {
+            levelView[4].setImageResource(R.drawable.level_4_closed);
+        }
+
+        //LEVEL05
+        if ( isLocked[5] == false ) {
+            levelView[5].setImageResource(R.drawable.level_5);
+        }
+        else {
+            levelView[5].setImageResource(R.drawable.level_5_closed);
+        }
+    }
+
+    private void checkLockLevelStage2(){
+        levelView[6] = (ImageView) findViewById(R.id.level06);
+        levelView[7] = (ImageView) findViewById(R.id.level07);
+        levelView[8] = (ImageView) findViewById(R.id.level08);
+        levelView[9] = (ImageView) findViewById(R.id.level09);
+        levelView[10] = (ImageView) findViewById(R.id.level10);
+
+        //LEVEL06
+        if ( isLocked[6] == false ) {
+            levelView[6].setImageResource(R.drawable.level_6);
+        }
+        else {
+            levelView[6].setImageResource(R.drawable.level_6_closed);
+        }
+
+        //LEVEL07
+        if ( isLocked[7] == false ) {
+            levelView[7].setImageResource(R.drawable.level_7);
+        }
+        else {
+            levelView[7].setImageResource(R.drawable.level_7_closed);
+        }
+
+        //LEVEL08
+        if ( isLocked[8] == false ) {
+            levelView[8].setImageResource(R.drawable.level_8);
+        }
+        else {
+            levelView[8].setImageResource(R.drawable.level_8_closed);
+        }
+
+        //LEVEL09
+        if ( isLocked[9] == false ) {
+            levelView[9].setImageResource(R.drawable.level_9);
+        }
+        else {
+            levelView[9].setImageResource(R.drawable.level_9_closed);
+        }
+
+        //LEVEL10
+        if ( isLocked[10] == false ) {
+            levelView[10].setImageResource(R.drawable.level_10);
+        }
+        else {
+            levelView[10].setImageResource(R.drawable.level_10_closed);
+        }
+    }
+
+    private void checkLockLevelStage3(){
+        levelView[11] = (ImageView) findViewById(R.id.level11);
+        levelView[12] = (ImageView) findViewById(R.id.level12);
+        levelView[13] = (ImageView) findViewById(R.id.level13);
+        levelView[14] = (ImageView) findViewById(R.id.level14);
+        levelView[15] = (ImageView) findViewById(R.id.level15);
+
+        //LEVEL11
+        if ( isLocked[11] == false ) {
+            levelView[11].setImageResource(R.drawable.level_11);
+        }
+        else {
+            levelView[11].setImageResource(R.drawable.level_11_closed);
+        }
+
+        //LEVEL12
+        if ( isLocked[12] == false ) {
+            levelView[12].setImageResource(R.drawable.level_12);
+        }
+        else {
+            levelView[12].setImageResource(R.drawable.level_12_closed);
+        }
+
+        //LEVEL13
+        if ( isLocked[13] == false ) {
+            levelView[13].setImageResource(R.drawable.level_13);
+        }
+        else {
+            levelView[13].setImageResource(R.drawable.level_13_closed);
+        }
+
+        //LEVEL14
+        if ( isLocked[14] == false ) {
+            levelView[14].setImageResource(R.drawable.level_14);
+        }
+        else {
+            levelView[14].setImageResource(R.drawable.level_14_closed);
+        }
+
+        //LEVEL15
+        if ( isLocked[15] == false ) {
+            levelView[15].setImageResource(R.drawable.level_15);
+        }
+        else {
+            levelView[15].setImageResource(R.drawable.level_15_closed);
+        }
+    }
+
+    private void levelChecked() {
+        // lock all level as default
+        for (int i = 0; i < isLocked.length; i++) {
+            isLocked[i] = true;
+        }
+
+        // check unlocked levels stored in database & unlock all before it
+        for (int j = 0; j <= db.getLastLevel(); j++) {
+            System.out.println("unlocking level " + j);
+            isLocked[j] = false;
+        }
+    }
+
+    private void unlockLevel(){
+        if (isLocked[data.getPosPlay() + 1]) {
+            System.out.println("UNLOCK LEVEL: " + (data.getPosPlay() + 1));
+
+            //isLocked[data.getPosPlay() + 1] = false;
+
+            // update last level in database
+            db.setLastLevel(data.getPosPlay() + 1);
+
+            // update last stage in database
+            if (db.getLastLevel() >= 6 && db.getLastLevel() < 11)
+                db.setLastStage(2);
+            else if (db.getLastLevel() >= 11)
+                db.setLastStage(3);
+            else
+                db.setLastStage(1);
+
+            levelChecked();
+        }
+    }
+    //endregion
 
     private void setCharacterPicture(final int x, final int y, final String move){
         if (db.getChosenCharacter().equalsIgnoreCase("RED")) {
@@ -242,357 +656,6 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
-    private void move(String action) {
-        // play sound srut
-        playSound(4);
-
-        if (action.equalsIgnoreCase("RIGHT")){ // x same, y plus
-            int posYwanted = posY + 1;
-            for (int y = posYwanted; y < lebar; y++){
-                try {
-                    if (maps[posX][y].equals("0")){
-                        maps[posX][y] = "1";
-                        posY = y;
-                        //mapspict[posX][y].setImageResource(R.drawable.all);
-                        setCharacterPicture(posX, posY, action);
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-            }
-
-            if (player2){
-                int posY2wanted = posY2 + 1;
-                for (int y = posY2wanted; y < lebar; y++){
-                    try {
-                        if (maps[posX2][y].equals("0")){
-                            maps[posX2][y] = "1";
-                            posY2 = y;
-                            //mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
-                            setCharacterPicture(posX2, posY2, action);
-                        } else
-                            break;
-                    } catch (Exception ex){
-                        Log.e("move_ERR", ex.toString());
-                    }
-                }
-            }
-
-        }
-
-        else if (action.equalsIgnoreCase("LEFT")){ // x same, y minus
-            int posYwanted = posY - 1;
-            for (int y = posYwanted; y >= 0; y--){
-                try {
-                    if (maps[posX][y].equals("0")){
-                        maps[posX][y] = "1";
-                        posY = y;
-                        //mapspict[posX][y].setImageResource(R.drawable.flatre_ani0);
-                        setCharacterPicture(posX, posY, action);
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-            }
-
-            if (player2){
-                int posY2wanted = posY2 - 1;
-                for (int y = posY2wanted; y >= 0; y--){
-                    try {
-                        if (maps[posX2][y].equals("0")){
-                            maps[posX2][y] = "1";
-                            posY2 = y;
-                            //mapspict[posX2][y].setImageResource(R.drawable.flatre_ani0);
-                            setCharacterPicture(posX2, posY2, action);
-                        } else
-                            break;
-                    } catch (Exception ex){
-                        Log.e("move_ERR", ex.toString());
-                    }
-                }
-            }
-        }
-
-        else if (action.equalsIgnoreCase("DOWN")){ // x plus, y same
-            int posXwanted = posX + 1;
-            for (int x = posXwanted; x < tinggi; x++){
-                try {
-                    if (maps[x][posY].equals("0")){
-                        maps[x][posY] = "1";
-                        posX = x;
-                        //mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
-                        setCharacterPicture(posX, posY, action);
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-            }
-
-            if (player2){
-                int posX2wanted = posX2 + 1;
-                for (int x = posX2wanted; x < tinggi; x++){
-                    try {
-                        if (maps[x][posY2].equals("0")){
-                            maps[x][posY2] = "1";
-                            posX2 = x;
-                            //mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
-                            setCharacterPicture(posX2, posY2, action);
-                        } else
-                            break;
-                    } catch (Exception ex){
-                        Log.e("move_ERR", ex.toString());
-                    }
-                }
-            }
-        }
-
-        else if (action.equalsIgnoreCase("UP")){ // x minus, y same
-            int posXwanted = posX - 1;
-            for (int x = posXwanted; x >= 0; x--){
-                try {
-                    if (maps[x][posY].equals("0")){
-                        maps[x][posY] = "1";
-                        posX = x;
-                        //mapspict[x][posY].setImageResource(R.drawable.flatre_ani0);
-                        setCharacterPicture(posX, posY, action);
-                    } else
-                        break;
-                } catch (Exception ex){
-                    Log.e("move_ERR", ex.toString());
-                }
-            }
-
-            if (player2){
-                int posX2wanted = posX2 - 1;
-                for (int x = posX2wanted; x >= 0; x--){
-                    try {
-                        if (maps[x][posY2].equals("0")){
-                            maps[x][posY2] = "1";
-                            posX2 = x;
-                            //mapspict[x][posY2].setImageResource(R.drawable.flatre_ani0);
-                            setCharacterPicture(posX2, posY2, action);
-                        } else
-                            break;
-                    } catch (Exception ex){
-                        Log.e("move_ERR", ex.toString());
-                    }
-                }
-            }
-        }
-
-        if(isWin()) {
-            System.out.println("masukinn gan"+data.getPosPlay());
-            unlockLevel();
-
-            // gotoMainMenu();
-            Intent callerIntent = getIntent();
-            if (callerIntent.getStringExtra("stage").equals("1")) {
-                setContentView(R.layout.menu_stage1);
-                checkLockLevelStage1();
-            } else if (callerIntent.getStringExtra("stage").equals("2")) {
-                setContentView(R.layout.menu_stage2);
-                checkLockLevelStage2();
-            } else if (callerIntent.getStringExtra("stage").equals("3")) {
-                setContentView(R.layout.menu_stage3);
-                checkLockLevelStage3();
-            }
-        }
-    }
-
-    private boolean isWin() {
-        boolean cek=true;
-        for(int i=0;i<tinggi;i++) {
-            for(int j=0;j<lebar;j++) {
-                if(maps[i][j].equals("0"))
-                    cek=false;
-            }
-        }
-        return cek;
-    }
-
-    private void unlockLevel(){
-        if(!isLocked[data.getPosPlay()]) {
-            System.out.println("masukinn unlock");
-            isLocked[data.getPosPlay()+1]=false;
-            for(int i=1;i<=15;i++) {
-                if(isLocked[i]) {
-                    System.out.println("tian true");
-                } else {
-                    System.out.println("tian false");
-                }
-            }
-        }
-    }
-
-    private void gotoMainMenu(){
-        Intent characterIntent = new Intent(GameActivity.this, MainActivity.class);
-        //intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(characterIntent);
-    }
-
-    //region check locked levels in stages
-    private void checkLockLevelStage1(){
-        levelView[1] = (ImageView) findViewById(R.id.level01);
-        levelView[2] = (ImageView) findViewById(R.id.level02);
-        levelView[3] = (ImageView) findViewById(R.id.level03);
-        levelView[4] = (ImageView) findViewById(R.id.level04);
-        levelView[5] = (ImageView) findViewById(R.id.level05);
-
-        //LEVEL01
-        if ( isLocked[1] == false ) {
-            levelView[1].setImageResource(R.drawable.level_1);
-        }
-        else {
-            levelView[1].setImageResource(R.drawable.level_1_closed);
-        }
-
-        //LEVEL02
-        if ( isLocked[2] == false ) {
-            levelView[2].setImageResource(R.drawable.level_2);
-        }
-        else {
-            levelView[2].setImageResource(R.drawable.level_2_closed);
-        }
-
-        //LEVEL03
-        if ( isLocked[3] == false ) {
-            levelView[3].setImageResource(R.drawable.level_3);
-        }
-        else {
-            levelView[3].setImageResource(R.drawable.level_3_closed);
-        }
-
-        //LEVEL04
-        if ( isLocked[4] == false ) {
-            levelView[4].setImageResource(R.drawable.level_4);
-        }
-        else {
-            levelView[4].setImageResource(R.drawable.level_4_closed);
-        }
-
-        //LEVEL05
-        if ( isLocked[5] == false ) {
-            levelView[5].setImageResource(R.drawable.level_5);
-        }
-        else {
-            levelView[5].setImageResource(R.drawable.level_5_closed);
-        }
-    }
-
-    private void checkLockLevelStage2(){
-        levelView[6] = (ImageView) findViewById(R.id.level06);
-        levelView[7] = (ImageView) findViewById(R.id.level07);
-        levelView[8] = (ImageView) findViewById(R.id.level08);
-        levelView[9] = (ImageView) findViewById(R.id.level09);
-        levelView[10] = (ImageView) findViewById(R.id.level10);
-
-        //LEVEL06
-        if ( isLocked[6] == false ) {
-            levelView[6].setImageResource(R.drawable.level_6);
-        }
-        else {
-            levelView[6].setImageResource(R.drawable.level_6_closed);
-        }
-
-        //LEVEL07
-        if ( isLocked[7] == false ) {
-            levelView[7].setImageResource(R.drawable.level_7);
-        }
-        else {
-            levelView[7].setImageResource(R.drawable.level_7_closed);
-        }
-
-        //LEVEL08
-        if ( isLocked[8] == false ) {
-            levelView[8].setImageResource(R.drawable.level_8);
-        }
-        else {
-            levelView[8].setImageResource(R.drawable.level_8_closed);
-        }
-
-        //LEVEL09
-        if ( isLocked[9] == false ) {
-            levelView[9].setImageResource(R.drawable.level_9);
-        }
-        else {
-            levelView[9].setImageResource(R.drawable.level_9_closed);
-        }
-
-        //LEVEL10
-        if ( isLocked[10] == false ) {
-            levelView[10].setImageResource(R.drawable.level_10);
-        }
-        else {
-            levelView[10].setImageResource(R.drawable.level_10_closed);
-        }
-    }
-
-    private void checkLockLevelStage3(){
-        levelView[11] = (ImageView) findViewById(R.id.level11);
-        levelView[12] = (ImageView) findViewById(R.id.level12);
-        levelView[13] = (ImageView) findViewById(R.id.level13);
-        levelView[14] = (ImageView) findViewById(R.id.level14);
-        levelView[15] = (ImageView) findViewById(R.id.level15);
-
-        //LEVEL10
-        if ( isLocked[10] == false ) {
-            levelView[10].setImageResource(R.drawable.level_10);
-        }
-        else {
-            levelView[10].setImageResource(R.drawable.level_10_closed);
-        }
-
-        //LEVEL11
-        if ( isLocked[11] == false ) {
-            levelView[11].setImageResource(R.drawable.level_11);
-        }
-        else {
-            levelView[11].setImageResource(R.drawable.level_11_closed);
-        }
-
-        //LEVEL12
-        if ( isLocked[12] == false ) {
-            levelView[12].setImageResource(R.drawable.level_12);
-        }
-        else {
-            levelView[12].setImageResource(R.drawable.level_12_closed);
-        }
-
-        //LEVEL13
-        if ( isLocked[13] == false ) {
-            levelView[13].setImageResource(R.drawable.level_13);
-        }
-        else {
-            levelView[13].setImageResource(R.drawable.level_13_closed);
-        }
-
-        //LEVEL14
-        if ( isLocked[14] == false ) {
-            levelView[14].setImageResource(R.drawable.level_14);
-        }
-        else {
-            levelView[14].setImageResource(R.drawable.level_14_closed);
-        }
-
-        //LEVEL15
-        if ( isLocked[15] == false ) {
-            levelView[15].setImageResource(R.drawable.level_15);
-        }
-        else {
-            levelView[15].setImageResource(R.drawable.level_15_closed);
-        }
-    }
-    //endregion
-
-    //region dont change if not necessary
-    public void reloadGame(View view){
-        data.setLevel(data.getLevel());
-        initiateNewMap();
-    }
-
     //region animation changePicture -> handler here
     private void changePicture(final int x, final int y, final int resId0, final int resId1,
                                final int resId2, final int resId3, final int resId4){
@@ -665,7 +728,7 @@ public class GameActivity extends AppCompatActivity {
     }
     //endregion
 
-    //region load levels -> button action for levels here
+    //region set level (starting new game level)
     public void level1(View v){
         // get data from data
         if ( isLocked[1] == false ) {
@@ -807,7 +870,11 @@ public class GameActivity extends AppCompatActivity {
     }
     //endregion
 
-    //region initiate new map & define map
+    public void reloadGame(View view){
+        data.setLevel(data.getLevel());
+        initiateNewMap();
+    }
+
     private void initiateNewMap(){
         this.lebar = data.getLebar();
         this.tinggi = data.getTinggi();
@@ -883,6 +950,7 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
+    //region define imageview in map
     private void defineMap1x4(){
         mapspict[0][0] = (ImageView) findViewById(R.id.iv00);
         mapspict[0][1] = (ImageView) findViewById(R.id.iv01);
@@ -1176,9 +1244,7 @@ public class GameActivity extends AppCompatActivity {
         });
     }
     //endregion
-    //endregion
 
-    //region play sound
     public void playSound(int arg){
         try{
             if (player.isPlaying()) {
@@ -1204,5 +1270,4 @@ public class GameActivity extends AppCompatActivity {
         player.setLooping(false);
         player.start();
     }
-    //endregion
 }

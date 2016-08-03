@@ -1,5 +1,6 @@
 package com.application.melanialani.fillall;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Handler;
@@ -25,12 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
         // initialize database
         db = new DatabaseHelper(MainActivity.this);
-        // test coins database
-        db.setCoins(100);
-        Log.d("COINS", String.valueOf(db.getCoins()));
+
+        // if dbVersion = 1, update it!
+        if (db.getDBVersion() == 1){
+            db.updateDBVersion(); // update dbversion to 2
+        }
 
         // play theme song 3
-        playSound(3);
+        //playSound(3);
 
         // show splash screen for 3 seconds
         final Handler handler = new Handler();
@@ -41,37 +44,15 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_main);
             }
         }, 3000);
+
+        testingPurpose();
     }
 
     public void onPlay(View v){
-        setContentView(R.layout.menu_stage);
-
         // play tombol
         playSound(1);
 
-        // initialize STAGELOCK
-        isStageLocked = new boolean[4];
-        isStageLocked[0] = true;
-        isStageLocked[1] = false;
-        isStageLocked[2] = true;
-        isStageLocked[3] = true;
-
-        stageView = new ImageView[4];
-        stageView[1] = (ImageView) findViewById(R.id.stage01);
-        stageView[2] = (ImageView) findViewById(R.id.stage02);
-        stageView[3] = (ImageView) findViewById(R.id.stage03);
-
-        //STAGE01
-        if ( isStageLocked[1] == false ) { stageView[1].setImageResource(R.drawable.stage_1); }
-        else { stageView[1].setImageResource(R.drawable.stage_1_closed); }
-
-        //STAGE02
-        if ( isStageLocked[2] == false ) { stageView[2].setImageResource(R.drawable.stage_2); }
-        else { stageView[2].setImageResource(R.drawable.stage_2_closed); }
-
-        //STAGE03
-        if ( isStageLocked[3] == false ) { stageView[3].setImageResource(R.drawable.stage_3); }
-        else { stageView[3].setImageResource(R.drawable.stage_3_closed); }
+        loadStageMenu();
     }
 
     public void onStage1(View v){
@@ -93,43 +74,112 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void loadStageMenu(){
+        setContentView(R.layout.menu_stage);
+
+        // initialize STAGELOCK
+        checkStage();
+    }
+
+    public void playSound(int arg){
+        try {
+            if (player.isPlaying()) {
+                player.stop();
+                player.release();
+            }
+
+        } catch(Exception e){
+            Log.e("SOUND_ERR", e.toString());
+        }
+
+        if(arg==1){
+            player = MediaPlayer.create(this, R.raw.tombol);
+        } else if(arg==2){
+            player= MediaPlayer.create(this, R.raw.tut);
+        } else if(arg==3){
+            player= MediaPlayer.create(this, R.raw.themesong3);
+        }
+
+        player.setLooping(false);
+        player.start();
+    }
+
+    public void gotoCharacterActivity(View view) {
+        // play tombol
+        playSound(1);
+
+        Intent characterIntent = new Intent(MainActivity.this, CharacterActivity.class);
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(characterIntent);
+    }
+
     private void gotoGameActivity(int stage){
         // create intent game activity
         // also send parameter to game activity -> send which stage selected
 
         Intent gameIntent = new Intent(MainActivity.this, GameActivity.class);
         gameIntent.putExtra("stage", String.valueOf(stage));
-        startActivity(gameIntent);
+        startActivityForResult(gameIntent, 79);
     }
 
-    public void gotoCharacterActivity(View view) {
-        Intent characterIntent = new Intent(MainActivity.this, CharacterActivity.class);
-        //intent.putExtra(EXTRA_MESSAGE, message);
-        playSound(1);//play tombol
-        startActivity(characterIntent);
-    }
-
-    public void playSound(int arg){
-        try{
-            if (player.isPlaying()) {
-                player.stop();
-                player.release();
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 79){
+            if (resultCode == Activity.RESULT_OK){
+                if (data.getBooleanExtra("reload", true)){
+                    loadStageMenu();
+                }
             }
-
-        }catch(Exception e){
         }
-        if(arg==1){
-            player = MediaPlayer.create(this, R.raw.tombol);
-        }
-        else if(arg==2){
-            player= MediaPlayer.create(this, R.raw.tut);
-        }
-        else if(arg==3){
-            player= MediaPlayer.create(this, R.raw.themesong3);
-        }
-        player.setLooping(false); // Set looping
-        player.start();
     }
 
+    private void checkStage(){
+        isStageLocked = new boolean[4];
+        isStageLocked[0] = true;
 
+        System.out.println("LAST LEVEL: " + db.getLastLevel());
+
+        if (db.getLastLevel() < 6) {
+            System.out.println("last stage: 1");
+            isStageLocked[1] = false;
+            isStageLocked[2] = true;
+            isStageLocked[3] = true;
+        } else if (db.getLastLevel() >= 6 && db.getLastLevel() < 11) {
+            System.out.println("last stage: 2");
+            isStageLocked[1] = false;
+            isStageLocked[2] = false;
+            isStageLocked[3] = true;
+        } else if(db.getLastLevel() >= 11) {
+            System.out.println("last stage: 3");
+            isStageLocked[1] = false;
+            isStageLocked[2] = false;
+            isStageLocked[3] = false;
+        }
+
+        stageView = new ImageView[4];
+        stageView[1] = (ImageView) findViewById(R.id.stage01);
+        stageView[2] = (ImageView) findViewById(R.id.stage02);
+        stageView[3] = (ImageView) findViewById(R.id.stage03);
+
+        //STAGE01
+        if ( isStageLocked[1] == false ) { stageView[1].setImageResource(R.drawable.stage_1); }
+        else { stageView[1].setImageResource(R.drawable.stage_1_closed); }
+
+        //STAGE02
+        if ( isStageLocked[2] == false ) { stageView[2].setImageResource(R.drawable.stage_2); }
+        else { stageView[2].setImageResource(R.drawable.stage_2_closed); }
+
+        //STAGE03
+        if ( isStageLocked[3] == false ) { stageView[3].setImageResource(R.drawable.stage_3); }
+        else { stageView[3].setImageResource(R.drawable.stage_3_closed); }
+    }
+
+    private void testingPurpose(){
+        //db.setCoins(1000);
+        //db.setCharactersUnlocked("ani");
+        //db.setLastLevel(1);
+
+        System.out.println("trace: "+ db.getLastLevel());
+        System.out.println("trace: "+ db.getCharactersUnlocked());
+    }
 }

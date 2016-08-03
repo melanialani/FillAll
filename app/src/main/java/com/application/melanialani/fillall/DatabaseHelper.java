@@ -70,7 +70,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_DBVERSION);
 
         db.execSQL("INSERT INTO " + TABLE_DBVERSION + " VALUES(1)");
-        db.execSQL("INSERT INTO " + TABLE_DATA + " VALUES(1, 0, 1, 1, 'FLATRE,PUR', 'PUR')");
+        db.execSQL("INSERT INTO " + TABLE_DATA + " VALUES(1, 100, 1, 1, 'flatre', 'FLATRE')");
+        // id, coins, stage, level, characters, chosen_char
     }
 
     @Override
