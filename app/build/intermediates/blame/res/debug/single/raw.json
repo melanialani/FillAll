@@ -4,14 +4,6 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\raw\\tut.mp3"
     },
     {
-        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\raw\\themesong3.mp3",
-        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\raw\\themesong3.mp3"
-    },
-    {
-        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\raw\\srut.mp3",
-        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\raw\\srut.mp3"
-    },
-    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\raw\\themesong3.mp3",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\raw\\themesong3.mp3"
     },
@@ -22,13 +14,5 @@
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\raw\\srut.mp3",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\raw\\srut.mp3"
-    },
-    {
-        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\raw\\tut.mp3",
-        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\raw\\tut.mp3"
-    },
-    {
-        "merged": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\raw\\tombol.mp3",
-        "source": "E:\\EGDownloads\\Fill all\\dari tian\\FillAll\\app\\src\\main\\res\\raw\\tombol.mp3"
     }
 ]

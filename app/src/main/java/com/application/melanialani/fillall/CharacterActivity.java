@@ -386,7 +386,7 @@ public class CharacterActivity extends AppCompatActivity {
     private void characteronClick(int idx, String character){
         if(isBuyed[idx]) {
             db.setChosenCharacter(character);
-            Toast.makeText(getApplicationContext(), "Character" + character + " chosen", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Character " + character + " chosen", Toast.LENGTH_SHORT).show();
         } else {
             if(data.getpriceCharacter(idx)<=db.getCoins()) {
                 Toast.makeText(getApplicationContext(), "Bought " + character, Toast.LENGTH_SHORT).show();

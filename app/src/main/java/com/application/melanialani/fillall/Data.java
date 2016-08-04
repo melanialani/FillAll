@@ -8,7 +8,7 @@ public class Data {
     private boolean         player2;
     private String          character;
 
-    private final int[] priceCharacter = {0, 300, 300, 500, 500, 800, 800, 800, 300, 300};
+    private final int[] priceCharacter = {300, 300, 800, 500, 500, 800, 800, 800, 800, 300};
     //endregion
 
     //region constanta animation

@@ -41,6 +41,7 @@ public class GameActivity extends AppCompatActivity {
     private MediaPlayer     player;
 
     public TextView         tvCoins;
+    public ImageView ivCoin;
     //endregion
 
     @Override
@@ -229,56 +230,64 @@ public class GameActivity extends AppCompatActivity {
             System.out.println("WIN LEVEL: " + data.getPosPlay());
             unlockLevel();
 
-            // wait for 1 second & then show win message
+            // wait for 0.5 second & then show win message
             final Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    // show win screen
-                    setContentView(R.layout.win_message);
-                    ImageView ivCoin = (ImageView) findViewById(R.id.ivCoin);
-                    if ((data.getPosPlay() + 1) <= 5) {
-                        ivCoin.setImageResource(R.drawable.coin_300);
+                    try {
+                        // show win screen
+                        setContentView(R.layout.win_message);
+                        ivCoin = (ImageView) findViewById(R.id.ivCoin);
+                        if ((data.getPosPlay() + 1) <= 5) {
+                            ivCoin.setImageResource(R.drawable.coin_300);
 
-                        // update database
-                        int totalCoin = db.getCoins() + 300;
-                        db.setCoins(totalCoin);
-                    } else if ((data.getPosPlay() + 1) > 5 && (data.getPosPlay() + 1) < 11) {
-                        ivCoin.setImageResource(R.drawable.coin_350);
+                            // update database
+                            int totalCoin = db.getCoins() + 300;
+                            db.setCoins(totalCoin);
+                        } else if ((data.getPosPlay() + 1) > 5 && (data.getPosPlay() + 1) < 11) {
+                            ivCoin.setImageResource(R.drawable.coin_350);
 
-                        // update database
-                        int totalCoin = db.getCoins() + 350;
-                        db.setCoins(totalCoin);
-                    } else if ((data.getPosPlay() + 1) >= 11) {
-                        ivCoin.setImageResource(R.drawable.coin_400);
+                            // update database
+                            int totalCoin = db.getCoins() + 350;
+                            db.setCoins(totalCoin);
+                        } else if ((data.getPosPlay() + 1) >= 11) {
+                            ivCoin.setImageResource(R.drawable.coin_400);
 
-                        // update database
-                        int totalCoin = db.getCoins() + 400;
-                        db.setCoins(totalCoin);
-                    }
-
-                    // show win screen for 4 second and then go to stage menu
-                    final Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            if (db.getLastLevel() == 6 || db.getLastLevel() == 11){
-                                // go to stage menu
-                                gotoStageMenu();
-                            } else if (fromStage == 1) {
-                                setContentView(R.layout.menu_stage1);
-                                checkLockLevelStage1();
-                            } else if (fromStage == 2) {
-                                setContentView(R.layout.menu_stage2);
-                                checkLockLevelStage2();
-                            } else if (fromStage == 3) {
-                                setContentView(R.layout.menu_stage3);
-                                checkLockLevelStage3();
-                            }
+                            // update database
+                            int totalCoin = db.getCoins() + 400;
+                            db.setCoins(totalCoin);
                         }
-                    }, 4000);
+
+                        final Handler handler2 = new Handler();
+                        handler2.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                try {
+                                    // show win screen for 2 seconds and then go to stage menu
+                                    if (db.getLastLevel() == 6 || db.getLastLevel() == 11){
+                                        // go to stage menu
+                                        gotoStageMenu();
+                                    } else if (fromStage == 1) {
+                                        setContentView(R.layout.menu_stage1);
+                                        checkLockLevelStage1();
+                                    } else if (fromStage == 2) {
+                                        setContentView(R.layout.menu_stage2);
+                                        checkLockLevelStage2();
+                                    } else if (fromStage == 3) {
+                                        setContentView(R.layout.menu_stage3);
+                                        checkLockLevelStage3();
+                                    }
+                                } catch (Exception e){
+                                    Log.e("check finish", e.toString());
+                                }
+                            }
+                        }, 2000);
+                    } catch (Exception e){
+                        Log.e("check finish", e.toString());
+                    }
                 }
-            }, 1000);
+            }, 500);
         }
     }
 
