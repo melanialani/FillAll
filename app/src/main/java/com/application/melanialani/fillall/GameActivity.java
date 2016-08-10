@@ -40,8 +40,14 @@ public class GameActivity extends AppCompatActivity {
     private DatabaseHelper  db;
     private MediaPlayer     player;
 
+    //Tampilan Level
+    private ImageView[]     levelNumber;
+
+    //Tampilan backbutton
+    private ImageView       backButton;
+
     public TextView         tvCoins;
-    public ImageView ivCoin;
+    public ImageView        ivCoin;
     //endregion
 
     @Override
@@ -75,6 +81,9 @@ public class GameActivity extends AppCompatActivity {
         mapspict = new ImageView[tinggi][lebar];
         data = new Data();
         posLevel = 0;
+
+        //Tampilan Level
+        levelNumber = new ImageView[2];
 
         // initiate swipe listener
         swipeDetector();
@@ -957,8 +966,43 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
         }
+
+        //Tampilan Level
+        int tempLevel = data.getLevel();
+        levelNumber[0] = (ImageView) findViewById(R.id.lva);
+        levelNumber[1] = (ImageView) findViewById(R.id.lvb);
+
+        if ( tempLevel == 1 ){levelNumber[0].setImageResource(R.drawable.angka1);levelNumber[1].setImageResource(R.drawable.angka1);}
+        else if ( tempLevel == 2 ){levelNumber[0].setImageResource(R.drawable.angka1);levelNumber[1].setImageResource(R.drawable.angka2);}
+        else if ( tempLevel == 3 ){levelNumber[0].setImageResource(R.drawable.angka1);levelNumber[1].setImageResource(R.drawable.angka3);}
+        else if ( tempLevel == 4 ){levelNumber[0].setImageResource(R.drawable.angka1);levelNumber[1].setImageResource(R.drawable.angka4);}
+        else if ( tempLevel == 5 ){levelNumber[0].setImageResource(R.drawable.angka1);levelNumber[1].setImageResource(R.drawable.angka5);}
+        else if ( tempLevel == 6 ){levelNumber[0].setImageResource(R.drawable.angka2);levelNumber[1].setImageResource(R.drawable.angka1);}
+        else if ( tempLevel == 7 ){levelNumber[0].setImageResource(R.drawable.angka2);levelNumber[1].setImageResource(R.drawable.angka2);}
+        else if ( tempLevel == 8 ){levelNumber[0].setImageResource(R.drawable.angka2);levelNumber[1].setImageResource(R.drawable.angka3);}
+        else if ( tempLevel == 9 ){levelNumber[0].setImageResource(R.drawable.angka2);levelNumber[1].setImageResource(R.drawable.angka4);}
+        else if ( tempLevel == 10 ){levelNumber[0].setImageResource(R.drawable.angka2);levelNumber[1].setImageResource(R.drawable.angka5);}
+        else if ( tempLevel == 11 ){levelNumber[0].setImageResource(R.drawable.angka3);levelNumber[1].setImageResource(R.drawable.angka1);}
+        else if ( tempLevel == 12 ){levelNumber[0].setImageResource(R.drawable.angka3);levelNumber[1].setImageResource(R.drawable.angka2);}
+        else if ( tempLevel == 13 ){levelNumber[0].setImageResource(R.drawable.angka3);levelNumber[1].setImageResource(R.drawable.angka3);}
+        else if ( tempLevel == 14 ){levelNumber[0].setImageResource(R.drawable.angka3);levelNumber[1].setImageResource(R.drawable.angka4);}
+        else if ( tempLevel == 15 ){levelNumber[0].setImageResource(R.drawable.angka3);levelNumber[1].setImageResource(R.drawable.angka5);}
+
+        //Tampilan Back Button
+        backButton = (ImageView) findViewById(R.drawable.back_button);
     }
 
+    public void onBackPressed(View v){
+        Intent callerIntent = getIntent();
+        Intent cobaIntent = new Intent(getApplicationContext(), GameActivity.class);
+        cobaIntent.putExtra("stage", callerIntent.getStringExtra("stage"));
+        startActivityForResult(cobaIntent, 0);
+    }
+    public void onBackStagePressed(View v)
+    {
+        Intent cobaIntent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivityForResult(cobaIntent, 0);
+    }
     //region define imageview in map
     private void defineMap1x4(){
         mapspict[0][0] = (ImageView) findViewById(R.id.iv00);

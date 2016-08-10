@@ -52,6 +52,10 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\playing.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\playing.png"
+    },
+    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani0_locked.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani0_locked.png"
     },
@@ -96,6 +100,10 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_pika_ani4.png"
     },
     {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\angka5.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\angka5.png"
+    },
+    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani3.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_oce_ani3.png"
     },
@@ -136,12 +144,12 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani4.png"
     },
     {
-        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani0_locked.png",
-        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani0_locked.png"
-    },
-    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani2.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani0_locked.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani0_locked.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -254,6 +262,14 @@
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_red_ani2.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_red_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\angka1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\angka1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_button.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\back_button.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_atu_ani1.png",
@@ -616,12 +632,12 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_pika_ani1.png"
     },
     {
-        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani2.png",
-        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani2.png"
-    },
-    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bulb_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_bulb_ani2.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_oce_ani2.png",
@@ -844,6 +860,10 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\angka4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\angka4.png"
+    },
+    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani3.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani3.png"
     },
@@ -880,6 +900,10 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani1.png"
     },
     {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\separator.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\separator.png"
+    },
+    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_geeks_ani1.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_geeks_ani1.png"
     },
@@ -908,8 +932,16 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_12.png"
     },
     {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\angka2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\angka2.png"
+    },
+    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani3.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani3.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_pur_ani4.png",
@@ -1002,6 +1034,10 @@
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_black_ani1.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_black_ani1.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\angka3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\angka3.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",

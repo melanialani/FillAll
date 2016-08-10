@@ -2,6 +2,7 @@ package com.application.melanialani.fillall;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private boolean[]       isStageLocked;
     private ImageView[]     stageView;
     private DatabaseHelper  db;
+
+    //Tampilan Karakter
+    private ImageView       tampilanKarakter;
 
     public MediaPlayer      player;
 
@@ -76,8 +80,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadStageMenu(){
         setContentView(R.layout.menu_stage);
-
         // initialize STAGELOCK
+
+        //Tampilan Karakter
+        tampilanKarakter = (ImageView) findViewById(R.id.karakter);
+        if (db.getChosenCharacter().equalsIgnoreCase("RED")) {tampilanKarakter.setImageResource(R.drawable.red_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("PUR")) {tampilanKarakter.setImageResource(R.drawable.pur_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("PIKA")) {tampilanKarakter.setImageResource(R.drawable.pika_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("OCE")) {tampilanKarakter.setImageResource(R.drawable.oce_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("LEMON")) {tampilanKarakter.setImageResource(R.drawable.lemon_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("GEEKS")) {tampilanKarakter.setImageResource(R.drawable.geeks_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("FLATRE")) {tampilanKarakter.setImageResource(R.drawable.flatre_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("BULB")) {tampilanKarakter.setImageResource(R.drawable.bulb_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("BLACK")) {tampilanKarakter.setImageResource(R.drawable.black_ani0);}
+        else if (db.getChosenCharacter().equalsIgnoreCase("ATU")) {tampilanKarakter.setImageResource(R.drawable.atu_ani0);}
+
         checkStage();
     }
 

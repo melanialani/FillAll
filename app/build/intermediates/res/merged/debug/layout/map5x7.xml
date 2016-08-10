@@ -5,15 +5,61 @@
     android:background="#ffffff"
     android:weightSum="6">
 
-    <Space
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/backbutton"
+            android:src="@drawable/back_button"
+            android:onClick="onBackPressed"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.75"/>
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lva"
+            android:src="@drawable/angka1"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/separator"/>
+        <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/lvb"
+        android:src="@drawable/angka1"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2.5"
+        android:layout_height="150dp"
+        android:layout_weight="4.25"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
         android:orientation="vertical">

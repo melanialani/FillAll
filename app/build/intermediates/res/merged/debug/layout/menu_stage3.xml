@@ -5,10 +5,17 @@
     android:weightSum="7"
     android:background="@drawable/bg_level">
 
+    <ImageView
+        android:layout_height="75dp"
+        android:layout_weight="0"
+        android:id="@+id/backbutton"
+        android:src="@drawable/back_button"
+        android:onClick="onBackStagePressed"
+        android:layout_width="75dp" />
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="0.5"/>
 
     <ImageView
         android:layout_width="match_parent"

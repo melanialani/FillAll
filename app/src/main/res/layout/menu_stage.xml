@@ -9,9 +9,34 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/logo_3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:src="@drawable/playing"/>
+        <ImageView
+            android:layout_margin="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/karakter"
+            android:src="@drawable/flatre_ani0"/>
+    </LinearLayout>
+
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -42,7 +67,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="10dp"
         android:layout_weight="1"/>
 
 </LinearLayout>
