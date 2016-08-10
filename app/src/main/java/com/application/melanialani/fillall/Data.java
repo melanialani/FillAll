@@ -6,7 +6,6 @@ public class Data {
     private int             tinggi, lebar, posX, posY, posX2, posY2, level, coin, posPlay;
     private String[][]      map;
     private boolean         player2;
-    private String          character;
 
     private final int[] priceCharacter = {300, 300, 800, 500, 500, 800, 800, 800, 800, 300};
     //endregion

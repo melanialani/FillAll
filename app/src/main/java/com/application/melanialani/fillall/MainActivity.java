@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private boolean[]       isStageLocked;
     private ImageView[]     stageView;
     private DatabaseHelper  db;
+    private Handler         handler;
 
-    //Tampilan Karakter
+    // tampilan Karakter
     private ImageView       tampilanKarakter;
 
     public MediaPlayer      player;
@@ -36,11 +37,9 @@ public class MainActivity extends AppCompatActivity {
             db.updateDBVersion(); // update dbversion to 2
         }
 
-        // play theme song 3
-        //playSound(3);
 
         // show splash screen for 3 seconds
-        final Handler handler = new Handler();
+        handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -48,13 +47,14 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_main);
             }
         }, 3000);
-
-        testingPurpose();
     }
 
     public void onPlay(View v){
         // play tombol
         playSound(1);
+
+        // kill handler
+        handler.removeCallbacksAndMessages(null);
 
         loadStageMenu();
     }
@@ -78,11 +78,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void gotoMainMenu(View v){
+        setContentView(R.layout.activity_main);
+    }
+
     private void loadStageMenu(){
         setContentView(R.layout.menu_stage);
-        // initialize STAGELOCK
 
-        //Tampilan Karakter
+        // tampilan Karakter
         tampilanKarakter = (ImageView) findViewById(R.id.karakter);
         if (db.getChosenCharacter().equalsIgnoreCase("RED")) {tampilanKarakter.setImageResource(R.drawable.red_ani0);}
         else if (db.getChosenCharacter().equalsIgnoreCase("PUR")) {tampilanKarakter.setImageResource(R.drawable.pur_ani0);}
@@ -124,6 +127,9 @@ public class MainActivity extends AppCompatActivity {
     public void gotoCharacterActivity(View view) {
         // play tombol
         playSound(1);
+
+        // kill handler
+        handler.removeCallbacksAndMessages(null);
 
         Intent characterIntent = new Intent(MainActivity.this, CharacterActivity.class);
         //intent.putExtra(EXTRA_MESSAGE, message);
@@ -189,14 +195,5 @@ public class MainActivity extends AppCompatActivity {
         //STAGE03
         if ( isStageLocked[3] == false ) { stageView[3].setImageResource(R.drawable.stage_3); }
         else { stageView[3].setImageResource(R.drawable.stage_3_closed); }
-    }
-
-    private void testingPurpose(){
-        //db.setCoins(1000);
-        //db.setCharactersUnlocked("ani");
-        //db.setLastLevel(1);
-
-        System.out.println("trace: "+ db.getLastLevel());
-        System.out.println("trace: "+ db.getCharactersUnlocked());
     }
 }

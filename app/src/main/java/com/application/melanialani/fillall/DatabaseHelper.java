@@ -257,7 +257,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         chosenCharacter = cursor.getString(0);
 
         // log
-        Log.d(TAG + " CH_CHARA", chosenCharacter);
+        //Log.d(TAG + " CH_CHARA", chosenCharacter);
 
         // return result
         return chosenCharacter;

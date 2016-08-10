@@ -30,24 +30,17 @@ public class GameActivity extends AppCompatActivity {
     private ImageView[][]   mapspict;
 
     private boolean[]       isLocked;
-    private ImageView[]     levelView;
+    private ImageView[]     levelView, levelNumber;
+    public  ImageView       ivCoin, imageTutor;
 
-    private int             lebar, tinggi, posX, posY, posX2, posY2, posLevel, fromStage;
+    private int             lebar, tinggi, posX, posY, posX2, posY2, fromStage;
     private boolean         player2, isReverse, isMoving;
 
-    private Handler         handler;
+    private Handler         handler, aHandler, bHandler, cHandler, dHandler, eHandler;
+    private Handler         fHandler, gHandler, hHandler, checkFinishHandler1, checkFinishHandler2;
     private Data            data;
     private DatabaseHelper  db;
     private MediaPlayer     player;
-
-    //Tampilan Level
-    private ImageView[]     levelNumber;
-
-    //Tampilan backbutton
-    private ImageView       backButton;
-
-    public TextView         tvCoins;
-    public ImageView        ivCoin;
     //endregion
 
     @Override
@@ -79,11 +72,8 @@ public class GameActivity extends AppCompatActivity {
         // initiate variables;
         maps = new String[tinggi][lebar];
         mapspict = new ImageView[tinggi][lebar];
-        data = new Data();
-        posLevel = 0;
-
-        //Tampilan Level
         levelNumber = new ImageView[2];
+        data = new Data();
 
         // initiate swipe listener
         swipeDetector();
@@ -230,7 +220,9 @@ public class GameActivity extends AppCompatActivity {
             }
         }
 
-        checkFinish();
+        if (!isMoving){
+            checkFinish();
+        }
     }
 
     //region win & after
@@ -240,8 +232,8 @@ public class GameActivity extends AppCompatActivity {
             unlockLevel();
 
             // wait for 0.5 second & then show win message
-            final Handler handler = new Handler();
-            handler.postDelayed(new Runnable() {
+            checkFinishHandler1 = new Handler();
+            checkFinishHandler1.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     try {
@@ -268,32 +260,24 @@ public class GameActivity extends AppCompatActivity {
                             db.setCoins(totalCoin);
                         }
 
-                        final Handler handler2 = new Handler();
-                        handler2.postDelayed(new Runnable() {
+                        checkFinishHandler2 = new Handler();
+                        checkFinishHandler2.postDelayed(new Runnable() {
                             @Override
                             public void run() {
                                 try {
-                                    // show win screen for 2 seconds and then go to stage menu
+                                    // show win screen for 2 seconds and then go to stage/level menu
                                     if (db.getLastLevel() == 6 || db.getLastLevel() == 11){
-                                        // go to stage menu
                                         gotoStageMenu();
-                                    } else if (fromStage == 1) {
-                                        setContentView(R.layout.menu_stage1);
-                                        checkLockLevelStage1();
-                                    } else if (fromStage == 2) {
-                                        setContentView(R.layout.menu_stage2);
-                                        checkLockLevelStage2();
-                                    } else if (fromStage == 3) {
-                                        setContentView(R.layout.menu_stage3);
-                                        checkLockLevelStage3();
+                                    } else {
+                                        gotoLevelMenu();
                                     }
                                 } catch (Exception e){
-                                    Log.e("check finish", e.toString());
+                                    Log.e("check finish 2", e.toString());
                                 }
                             }
                         }, 2000);
                     } catch (Exception e){
-                        Log.e("check finish", e.toString());
+                        Log.e("check finish 1", e.toString());
                     }
                 }
             }, 500);
@@ -314,7 +298,15 @@ public class GameActivity extends AppCompatActivity {
         return cek;
     }
 
+    // go back to stage menu in main activity
     private void gotoStageMenu(){
+        // kill all handler here before moving on
+        try {
+            removeAllHandlerCallbacks();
+        } catch (Exception ex){
+            Log.e("remove handler", ex.toString());
+        }
+
         Intent intentReturn = new Intent();
 
         // set properties to return
@@ -325,6 +317,26 @@ public class GameActivity extends AppCompatActivity {
 
         // close this activity
         this.finish();
+    }
+
+    private void gotoLevelMenu(){
+        // kill all handler here before moving on
+        try {
+            removeAllHandlerCallbacks();
+        } catch (Exception ex){
+            Log.e("remove handler", ex.toString());
+        }
+
+        if (fromStage == 1) {
+            setContentView(R.layout.menu_stage1);
+            checkLockLevelStage1();
+        } else if (fromStage == 2) {
+            setContentView(R.layout.menu_stage2);
+            checkLockLevelStage2();
+        } else if (fromStage == 3) {
+            setContentView(R.layout.menu_stage3);
+            checkLockLevelStage3();
+        }
     }
     //endregion
 
@@ -677,50 +689,50 @@ public class GameActivity extends AppCompatActivity {
     //region animation changePicture -> handler here
     private void changePicture(final int x, final int y, final int resId0, final int resId1,
                                final int resId2, final int resId3, final int resId4){
-        handler = new Handler();
-        handler.postDelayed(new Runnable() {
+        aHandler = new Handler();
+        aHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 mapspict[x][y].setImageResource(resId1);
 
-                handler = new Handler();
-                handler.postDelayed(new Runnable() {
+                bHandler = new Handler();
+                bHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         mapspict[x][y].setImageResource(resId2);
 
-                        handler = new Handler();
-                        handler.postDelayed(new Runnable() {
+                        cHandler = new Handler();
+                        cHandler.postDelayed(new Runnable() {
                             @Override
                             public void run() {
                                 mapspict[x][y].setImageResource(resId3);
 
-                                handler = new Handler();
-                                handler.postDelayed(new Runnable() {
+                                dHandler = new Handler();
+                                dHandler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
                                         mapspict[x][y].setImageResource(resId4);
 
-                                        handler = new Handler();
-                                        handler.postDelayed(new Runnable() {
+                                        eHandler = new Handler();
+                                        eHandler.postDelayed(new Runnable() {
                                             @Override
                                             public void run() {
                                                 mapspict[x][y].setImageResource(resId3);
 
-                                                handler = new Handler();
-                                                handler.postDelayed(new Runnable() {
+                                                fHandler = new Handler();
+                                                fHandler.postDelayed(new Runnable() {
                                                     @Override
                                                     public void run() {
                                                         mapspict[x][y].setImageResource(resId2);
 
-                                                        handler = new Handler();
-                                                        handler.postDelayed(new Runnable() {
+                                                        gHandler = new Handler();
+                                                        gHandler.postDelayed(new Runnable() {
                                                             @Override
                                                             public void run() {
                                                                 mapspict[x][y].setImageResource(resId1);
 
-                                                                handler = new Handler();
-                                                                handler.postDelayed(new Runnable() {
+                                                                hHandler = new Handler();
+                                                                hHandler.postDelayed(new Runnable() {
                                                                     @Override
                                                                     public void run() {
                                                                         mapspict[x][y].setImageResource(resId0);
@@ -743,6 +755,20 @@ public class GameActivity extends AppCompatActivity {
             }
         }, 0);
 
+    }
+
+    private void removeAllHandlerCallbacks(){
+        handler.removeCallbacksAndMessages(null);
+        checkFinishHandler1.removeCallbacksAndMessages(null);
+        checkFinishHandler2.removeCallbacksAndMessages(null);
+        aHandler.removeCallbacksAndMessages(null);
+        bHandler.removeCallbacksAndMessages(null);
+        cHandler.removeCallbacksAndMessages(null);
+        dHandler.removeCallbacksAndMessages(null);
+        eHandler.removeCallbacksAndMessages(null);
+        fHandler.removeCallbacksAndMessages(null);
+        gHandler.removeCallbacksAndMessages(null);
+        hHandler.removeCallbacksAndMessages(null);
     }
     //endregion
 
@@ -889,11 +915,33 @@ public class GameActivity extends AppCompatActivity {
     //endregion
 
     public void reloadGame(View view){
+        try {
+            removeAllHandlerCallbacks();
+        } catch (Exception ex){
+            Log.e("remove handler", ex.toString());
+        }
+
         data.setLevel(data.getLevel());
         initiateNewMap();
     }
 
+    public void onBackPressed(View v){
+        // go back to level layout
+        gotoLevelMenu();
+    }
+
+    public void onBackStagePressed(View v){
+        // go back to stage layout in main activity
+        gotoStageMenu();
+    }
+
     private void initiateNewMap(){
+        try {
+            removeAllHandlerCallbacks();
+        } catch (Exception ex){
+            Log.e("remove handler", ex.toString());
+        }
+
         this.lebar = data.getLebar();
         this.tinggi = data.getTinggi();
         this.posX = data.getPosX();
@@ -967,7 +1015,7 @@ public class GameActivity extends AppCompatActivity {
             }
         }
 
-        //Tampilan Level
+        // tampilan Level
         int tempLevel = data.getLevel();
         levelNumber[0] = (ImageView) findViewById(R.id.lva);
         levelNumber[1] = (ImageView) findViewById(R.id.lvb);
@@ -988,21 +1036,25 @@ public class GameActivity extends AppCompatActivity {
         else if ( tempLevel == 14 ){levelNumber[0].setImageResource(R.drawable.angka3);levelNumber[1].setImageResource(R.drawable.angka4);}
         else if ( tempLevel == 15 ){levelNumber[0].setImageResource(R.drawable.angka3);levelNumber[1].setImageResource(R.drawable.angka5);}
 
-        //Tampilan Back Button
-        backButton = (ImageView) findViewById(R.drawable.back_button);
+        // check tutorial
+        imageTutor = (ImageView) findViewById(R.id.tutor);
+
+        if (tempLevel == 1) {
+            imageTutor.setImageResource(R.drawable.tutorial_1);
+        } else if (tempLevel == 6) {
+            imageTutor.setImageResource(R.drawable.tutorial_2);
+            handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    imageTutor.setImageResource(R.drawable.tutorial_3);
+                }
+            }, 2000);
+        } else if (tempLevel == 11) {
+            imageTutor.setImageResource(R.drawable.tutorial_4);
+        }
     }
 
-    public void onBackPressed(View v){
-        Intent callerIntent = getIntent();
-        Intent cobaIntent = new Intent(getApplicationContext(), GameActivity.class);
-        cobaIntent.putExtra("stage", callerIntent.getStringExtra("stage"));
-        startActivityForResult(cobaIntent, 0);
-    }
-    public void onBackStagePressed(View v)
-    {
-        Intent cobaIntent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivityForResult(cobaIntent, 0);
-    }
     //region define imageview in map
     private void defineMap1x4(){
         mapspict[0][0] = (ImageView) findViewById(R.id.iv00);

@@ -144,12 +144,12 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\left_oce_ani4.png"
     },
     {
-        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani2.png",
-        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani2.png"
-    },
-    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\atu_ani0_locked.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\atu_ani0_locked.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_flatre_ani2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_flatre_ani2.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -244,6 +244,10 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\stage_3_closed.png"
     },
     {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial_2.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\tutorial_2.png"
+    },
+    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\up_black_ani2.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\up_black_ani2.png"
     },
@@ -278,6 +282,10 @@
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pika_ani0.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\pika_ani0.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial_1.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\tutorial_1.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_pur_ani2.png",
@@ -370,6 +378,10 @@
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\right_flatre_ani2.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\right_flatre_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial_0.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\tutorial_0.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_7.png",
@@ -980,6 +992,10 @@
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\level_complete.png"
     },
     {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial_3.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\tutorial_3.png"
+    },
+    {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\black_ani.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\black_ani.png"
     },
@@ -994,6 +1010,10 @@
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\down_bulb_ani2.png",
         "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\down_bulb_ani2.png"
+    },
+    {
+        "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial_4.png",
+        "source": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\src\\main\\res\\drawable\\tutorial_4.png"
     },
     {
         "merged": "E:\\Documents\\AndroidStudioProjects\\kelas\\FillAll\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\level_7_closed.png",
